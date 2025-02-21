@@ -1,0 +1,1489 @@
+---
+layout: page
+full-width: true
+cover-img: "/assets/img/llm_hack_fa24_banner.png"
+---
+
+<!-- Homepage HTML -->
+
+<!-- <div class="banner">
+  <img src="{{site.baseurl}}/assets/img/ZKP_Web3_HackathonBanner.jpg" alt="Banner Image">
+</div> -->
+
+
+<style>
+  .banner {
+    position: relative;
+    text-align: center;
+    margin-top: -70px;
+    /* top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; */
+    overflow: hidden;
+  }
+  
+  .banner-img {
+    width: 100%;
+  }
+
+  .center-container {
+        display: flex;
+        justify-content: center; /* Centers horizontally */
+    }
+
+  .styled-button {
+        font-family: Inter, sans-serif; /* Change the font */
+        font-size: 20px;               /* Adjust the font size */
+        padding: 25px 32px;            /* Add some padding */
+        width: 300px;
+        background-color: #ffbc03e4;     /* Set background color */
+        color: black;                  /* Set text color */
+        border: solid 0.5px #30303060;     /* Set border */
+        border-radius: 10px;           /* Round corners */
+        cursor: pointer;               /* Change cursor on hover */
+        transition: background-color 0.3s; /* Smooth transition */
+    }
+    
+    .styled-button:hover {
+        background-color: #dcbf72;     /* Darker shade on hover */
+    }
+
+    .winner-button {
+        font-family: Inter, sans-serif; /* Change the font */
+        font-size: 20px;               /* Adjust the font size */
+        padding: 25px 32px;            /* Add some padding */
+        width: 750px;
+        background-color: #ffbc03e4;     /* Set background color */
+        color: black;                  /* Set text color */
+        border: solid 0.5px #30303060;     /* Set border */
+        border-radius: 10px;           /* Round corners */
+        cursor: pointer;               /* Change cursor on hover */
+        transition: background-color 0.3s; /* Smooth transition */
+    }
+    
+    .winner-button:hover {
+        background-color: #dcbf72;     /* Darker shade on hover */
+    }
+
+    .button-row-container {
+      display: flex;
+      justify-content: center;
+    }
+  
+  </style>
+
+<div class="banner-img">
+  <img src="{{site.baseurl}}/assets/img/llm_agents_hackathon_banner.png" alt="Banner Image"
+       class="banner-img">
+</div>
+
+
+<p style="text-align: left; font-size: 1.5rem; margin-top: 20px; margin-bottom: 20px;">
+  This LLM Agents Hackathon, hosted by <b><a href="https://rdi.berkeley.edu/">Berkeley RDI</a></b> and in conjunction with the <b><a href="https://llmagents-learning.org/f24"> LLM Agents MOOC</a></b>, aims to bring together students, researchers, and practitioners to build and showcase innovative work in LLM agents, grow the AI agent community, and advance LLM agent technology. 
+  It is <b>open to the public</b> and will be held both virtually and in-person at UC Berkeley. 
+</p>
+
+<h4> Our hackathon has successfully concluded. Thank you for participating. Join our <a href="https://llmagents-learning.org/sp25">Spring 2025 Advanced Large Language Model Agents MOOC</a> today!</h4>
+
+
+<div class="center-container" style="gap: 20px; margin-top: 20px">
+<!--   <button class="styled-button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSevYR6VaYK5FkilTKwwlsnzsn8yI_rRLLqDZj0NH7ZL_sCs_g/viewform', '_blank')">LLM Agents Hackathon Participant Signup</button>
+  <button class="styled-button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdKesnu7G_7M1dR-Uhb07ubvyZxcw6_jcl8klt-HuvahZvpvA/viewform?usp=sf_link', '_blank')">LLM Agents Hackathon Team Signup</button> -->
+  <button class="winner-button" onclick="document.getElementById('winners').scrollIntoView({ behavior: 'smooth' });">
+    Discover our amazing hackathon winners and their projects! →
+  </button>
+</div>
+
+<div class="sponsor-banner-container">
+  <img src="{{site.baseurl}}/assets/img/hackathon-stats.jpg" alt="Banner Image"
+  class="sponsor-banner-img">
+</div>
+  
+<!-- <h3> Thank you for participating, please register for ZKP Closing Workshop, Hackathon Demos & Awards Ceremony, plus Career Fair & Dev Info Reception, on Tuesday, May 2, 5-8pm PDT, offered both virtually and in-person at Wozniak Lounge, Soda Hall, UC Berkeley: </h3>
+ -->
+
+<p style="text-align: left; margin-top: 20px; margin-bottom: 20px;">
+  The hackathon is designed to have 5 tracks:
+<ul>
+  <li><b>Applications Track:</b> Building innovative LLM agent applications across diverse domains, from coding assistants to personal AI companions.</li>
+  <li><b>Benchmarks Track:</b> Creating and improving benchmarks for AI agents, enabling standardized evaluation and comparison of different agent architectures and capabilities.</li>
+  <li><b>Fundamentals Track:</b> Enhancing core agent capabilities such as memory, planning, reasoning, and tool use through novel frameworks and techniques.</li>
+  <li><b>Safety Track:</b> Addressing critical safety concerns in AI agent deployment, including misuse prevention, privacy, interpretability, and broader societal impacts.</li>
+  <li><b>Decentralized and Multi-Agents Track:</b> Advancing tools, frameworks, and applications for decentralized multi-agent systems, focusing on enhanced capabilities, interactions, and deployment.</li>
+</ul>
+</p>
+
+<p>
+We hope this hackathon with these specially-designed tracks can help demonstrate that we are entering a new phase of maturity and practicality of LLM agent technology where: 
+<ul>
+  <li>Every developer can learn to use LLM agent technology for building innovative applications (Applications Track)</li>
+  <li>Decentralized community collaboration can effectively bring the community together to build key technologies and infrastructure for LLM agents, serving as important foundations and public good for the community in AI (Benchmarks, Fundamentals, Safety, and Multi-Agent Tracks)</li>
+</ul>
+
+For Hackathon discussion, please join the Hackathon channel at <a href="https://discord.gg/NWVpQ9rBvd">LLM Agents Discord</a>. For more information and to answer frequently asked questions, please refer to our ongoing <a href="https://docs.google.com/document/d/1P4OBOXuHRJYU9tf1KH_NQWvaZQ1_8wCfNi3MOnCw6RI/edit?usp=sharing">Hackathon FAQ</a>.
+</p>
+
+<style>
+  .prize-container {
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+    align-items: center; /* Centers horizontally */
+    text-align: center; /* Center text within each child */
+  }
+
+  .sponsor-container {
+    text-align: left;
+    padding-top: 20px;
+  }
+</style>
+
+<!-- Prizes section  -->
+<hr style="border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 33, 71, 0), rgba(0, 33, 71, 0.75), rgba(0, 33, 71, 0)); margin-top: 40px; margin-bottom: 40px;">
+<h1 style="text-align: center; font-size: 36px; margin-top: 40px; margin-bottom: 40px; color: #CB9445;">PRIZES & RESOURCES</h1>
+<div class="prize-container">
+  <h3>⭐ More than $200k in prizes and resources! With more to be announced...</h3>
+    <!-- <ul class="sponsor-container">
+      <li> <a href="https://www.berkeley.edu">OpenAI</a>. Up to 3 winners who will receive 25k, 10k, and 5k in credits. Offering credits for the hackathon. </li>
+      <li> <a href="https://www.berkeley.edu/">Google AI</a>. Winner receives 25k in credits. Offering credits for the hackathon. </li>
+    </ul> -->
+</div>
+
+
+<style>
+  .card-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+  .sponsor-card {
+    width: 300px;
+    height: 420px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+}
+.card-reduced-width {
+  width: 190px;
+    height: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+}
+.card-reduced-height {
+  width: 250px;
+    height: 230px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+}
+.card-image img {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    justify-content: center;
+    height: 100px;
+    object-fit: scale-down;
+    padding: 10px;
+}
+.card-text p{
+    padding: 20px;
+    font-size: 15px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.card-reduced-width-text p{
+  padding: 20px;
+    font-size: 10px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: max-content;
+}
+
+.card-button {
+  font-family: Arial, sans-serif;
+    font-size: 12px;
+    padding: 16px 24px;
+    width: 60%;
+    text-align: center;
+    background-color: #ffbd03;
+    color: black;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;   /* Position relative to the card */
+    bottom: 50px;         /* Adjust distance from the bottom */
+    left: 50%;            /* Center horizontally */
+    transform: translateX(-50%); /* Ensure it's centered based on its width */
+    }
+
+  .card-button:hover {
+      background-color: #dcbf72;     /* Darker shade on hover */
+  }
+</style>
+
+<div class="card-row">
+  <div class="sponsor-card">
+    <div class="card-image">
+      <img src="{{site.baseurl}}/assets/img/OpenAI-Logo.png" alt="Sponsor Logo" style="padding-top: 20px;">
+    </div>
+    <div class="card-text">
+      <p><b>PRIZES</b> 3 Winners! 1st, 2nd and 3rd place - $25k, $10k, and $5k in OpenAI credits  <br> <br>
+
+        <b>RESOURCES</b> Access & credits are available for hackathon teams <br> <br> 
+        <a href="https://docs.google.com/document/d/1wnX-oasur0bDvoiMwQC52_wgVYK1UgPwYJiY5-8guTo/edit?tab=t.0#heading=h.t1n0cquisa1f"> ⧉ Learn More Here   </a>
+         </p>
+    </div>
+  </div>
+  <div class="sponsor-card">
+    <div class="card-image">
+      <img src="{{site.baseurl}}/assets/img/google-ai.png" alt="Sponsor Logo">
+    </div>
+    <div class="card-text">
+      <p><b>PRIZES</b> Winners receive prizes totaling $25k in Google Cloud credits <br> <br>
+
+        <b>RESOURCES</b> Access & credits are available for hackathon teams <br> <br> <br>
+        <a href="https://docs.google.com/document/d/1wnX-oasur0bDvoiMwQC52_wgVYK1UgPwYJiY5-8guTo/edit?tab=t.0#heading=h.cyfpb9m5zgp2"> ⧉ Learn More Here   </a>
+         </p>
+    </div>
+  </div>
+</div>
+
+<div class="card-row">
+  <div class="card-reduced-width">
+    <div class="card-image">
+      <img style="padding-top: 35px;" src="{{site.baseurl}}/assets/img/amd_logo.jpg" alt="Sponsor Logo" style="padding-top: 20px;">
+    </div>
+    <div class="card-reduced-width-text">
+      <p>
+        <b>PRIZES</b> Winners will be selected for a total of $15,000 in gift cards for the Applications track. <br> <br> <br>
+        <b>RESOURCES</b> Learn more and check their openings. <br> <br> <br>
+        <a href="https://docs.google.com/document/d/1wnX-oasur0bDvoiMwQC52_wgVYK1UgPwYJiY5-8guTo/edit?tab=t.0#heading=h.ox1r1xocsnrk">⧉ Learn More Here     </a>
+       </p>
+    </div>
+  </div>
+  <div class="card-reduced-width">
+    <div class="card-image">
+      <img style="padding-top: 35px;" src="{{site.baseurl}}/assets/img/lambda_logo_with_padding.png" alt="Sponsor Logo">
+    </div>
+    <div class="card-reduced-width-text">
+      <p><b>PRIZES</b> Winners selected across all 5 tracks for prizes totaling $4.5k in λ credits <br> <br>
+        <b>RESOURCES</b> Llama API endpoint throughout the hackathon and GPU compute credits <br> <br> <br>
+        <a href="https://docs.google.com/document/d/1wnX-oasur0bDvoiMwQC52_wgVYK1UgPwYJiY5-8guTo/edit?tab=t.0#heading=h.25h8os9yghg3">⧉ Learn More Here     </a>
+         </p>
+    </div>
+  </div>
+  <div class="card-reduced-width">
+    <div class="card-image">
+      <img style="padding-top: 35px;" src="{{site.baseurl}}/assets/img/intel_tiber_logo.png" alt="Sponsor Logo" style="padding-top: 20px;">
+    </div>
+    <div class="card-reduced-width-text">
+      <p>
+        <b>PRIZES</b> Winners receives prizes totaling up to $32k in Intel Tiber Cloud Credits <br> <br>
+        <b>RESOURCES</b> Compute resources, including CPU and GPU. <br> <br> <br> <br>
+        <a href="https://docs.google.com/document/d/1wnX-oasur0bDvoiMwQC52_wgVYK1UgPwYJiY5-8guTo/edit?tab=t.0#heading=h.jv7pl93tcyps">⧉ Learn More Here     </a>
+       </p>
+    </div>
+  </div>
+</div>
+
+
+<div class="card-row">
+  <div class="card-reduced-height" style="height: 280px">
+    <div class="card-image">
+      <img style="padding-top: 40px" src="{{site.baseurl}}/assets/img/schmidt_sciences.png" alt="Sponsor Logo">
+    </div>
+    <div class="card-reduced-width-text">
+      <p>
+        <b>PRIZES</b> Winners will be selected for up to $10,000 in gift cards for the Safety track. <br> <br>
+        <b>RESOURCES</b>  Learn more about their work on AI Safety 
+        <br> <br> <br>
+        <a href="https://docs.google.com/document/d/1wnX-oasur0bDvoiMwQC52_wgVYK1UgPwYJiY5-8guTo/edit?tab=t.0#bookmark=id.upmag0u7hlto">⧉ Learn More Here     </a>
+       </p>
+    </div>
+  </div>
+  <div class="card-reduced-height"  style="height: 280px">
+    <div class="card-image">
+      <img style="padding-top: 45px;" src="{{site.baseurl}}/assets/img/open_phil_logo.jpg" alt="Sponsor Logo" style="padding-top: 20px;">
+    </div>
+    <div class="card-reduced-width-text">
+      <p>
+        <b>PRIZES</b> Up to $20,000 in cash for winners of the Safety track! (Up to $10k/$6.5k/$3.5k for 1st/2nd/3rd place). <br> <br>
+        <b>RESOURCES</b>  Learn more about their grants.
+        <br> <br>
+        <a href="https://docs.google.com/document/d/1wnX-oasur0bDvoiMwQC52_wgVYK1UgPwYJiY5-8guTo/edit?tab=t.0#bookmark=id.s2bdaeyt71qm">⧉ Learn More Here</a>
+       </p>
+    </div>
+  </div>
+  <div class="card-reduced-height"  style="height: 280px">
+    <div class="card-image">
+      <img style="padding-top: 45px;" src="{{site.baseurl}}/assets/img/amazon_science.png" alt="Sponsor Logo" style="padding-top: 20px;">
+    </div>
+    <div class="card-reduced-width-text">
+      <p>
+        <b>PRIZES</b> Up to $6,000 in AWS cloud credits for winners. <br> <br>
+        <b>RESOURCES</b>   Learn more and check out their openings, especially PhD internships in GenAI/LLMs.
+        <br> <br>
+        <a href="https://docs.google.com/document/d/1wnX-oasur0bDvoiMwQC52_wgVYK1UgPwYJiY5-8guTo/edit?tab=t.0#bookmark=id.c6u1ak8h64s6">⧉ Learn More Here</a>
+       </p>
+    </div>
+  </div>
+</div>
+
+
+<div class="card-row">
+  <div class="card-reduced-height">
+    <div class="card-image">
+      <img style="padding-top: 40px" src="{{site.baseurl}}/assets/img/sierra_logo.png" alt="Sponsor Logo">
+    </div>
+    <div class="card-reduced-width-text">
+      <p><b>RESOURCES</b> Learn more, watch for an info session, and check out their openings. <br> <br> 
+        <a href="https://docs.google.com/document/d/1wnX-oasur0bDvoiMwQC52_wgVYK1UgPwYJiY5-8guTo/edit?tab=t.0#heading=h.db2fgrlxim1h">⧉ Learn More Here</a>
+         </p>
+    </div>
+  </div>
+  <div class="card-reduced-height">
+    <div class="card-image">
+      <img style="padding-top: 45px;" src="{{site.baseurl}}/assets/img/orby_logo.png" alt="Sponsor Logo" style="padding-top: 20px;">
+    </div>
+    <div class="card-reduced-width-text">
+      <p>
+        <b>RESOURCES</b> Learn more and check out their openings. <br> <br> <br> 
+        <a href="https://docs.google.com/document/d/1wnX-oasur0bDvoiMwQC52_wgVYK1UgPwYJiY5-8guTo/edit?tab=t.0#heading=h.ckdp96zcgwi8">⧉ Learn More Here</a>
+       </p>
+    </div>
+  </div>
+  <div class="card-reduced-height">
+    <div class="card-image">
+      <img style="padding-top: 45px;" src="{{site.baseurl}}/assets/img/service_now_logo.jpg" alt="Sponsor Logo" style="padding-top: 20px;">
+    </div>
+    <div class="card-reduced-width-text">
+      <p>
+        <b>RESOURCES</b> Learn more and check out their openings. <br> <br> <br> 
+        <a href="https://docs.google.com/document/d/1wnX-oasur0bDvoiMwQC52_wgVYK1UgPwYJiY5-8guTo/edit?tab=t.0#bookmark=id.omd9pbnfsfgh">⧉ Learn More Here</a>
+       </p>
+    </div>
+  </div>
+</div>
+
+
+<div class="card-row">
+  <div class="card-reduced-height" style="width: 400px; height: 280px">
+    <div class="card-image">
+      <img style="padding-top: 25px" src="{{site.baseurl}}/assets/img/llm_agents_summit_logo.png" alt="Sponsor Logo">
+    </div>
+    <div class="card-reduced-width-text">
+
+      <p>
+        
+        <b> SPECIAL RAFFLE </b>
+        All participants eligible. Raffle winners receive travel grants for the LLM Agents Summit in August 2025 in Berkeley, CA.
+        <br> <br> <br>
+
+        <b>SHOWCASE OPPORTUNITY</b> Hackathon winners will be invited to showcase their projects at the Summit.  <br> <br>          
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- CSS for the banner -->
+
+<style>
+  .banner {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .banner img {
+    width: 150%;
+    height: 120%;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+</style>
+
+<div style="height:10px; width:100%; clear:both;"></div>
+
+<!--
+<div data-tf-widget="YzXtT8nS" data-tf-opacity="100" data-tf-iframe-props="title=ZKP Hackathon Application 2" data-tf-transitive-search-params data-tf-medium="snippet" style="width:100%;height:500px;"></div><script src="//embed.typeform.com/next/embed.js"></script>
+-->
+
+<style>
+  .apply-button {
+    background-color: #CB9445;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    width: 50%;
+    margin: 20px auto 0;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 24px;
+  }
+
+  .apply-button:hover {
+    background-color: #9B7B36;
+  }
+</style>
+
+<head> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head> 
+
+<hr style="border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 33, 71, 0), rgba(0, 33, 71, 0.75), rgba(0, 33, 71, 0)); margin-top: 40px; margin-bottom: 40px;">
+
+
+<style>
+  .tabs { display: flex; justify-content: center; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+  .tab { padding: 10px 20px; cursor: pointer; border: 1px solid #ccc; border-radius: 20px; background: #e1e1e1; color: black; text-decoration: none; }
+  .tab.active { background-color: #007bff; color: white}
+  .winner-container { display: none; }
+  .winner-container.active { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+  .winner-card { text-align: center; border: 1px solid #ddd; padding: 20px; width: 30%; min-width: 250px; position: relative; border-radius: 10px; box-sizing: border-box; }
+  .placement {  position: absolute; top: 10px; right: 10px; font-size: 11px; padding: 5px 15px; background: gold; border-radius: 15px; text-decoration: none; margin: 5px;  }
+  .fun-fact-container { background: #e1e1e1; padding: 10px; border-radius: 10px; margin-top: 10px; transition: max-height 0.3s ease; overflow: hidden; }
+  .links a { display: inline-block; padding: 5px 15px; font-size: 11px; background: #e1e1e1; color: black; border-radius: 15px; text-decoration: none; margin: 5px; }
+</style>
+
+<h1 id="winners" style="text-align: center; font-size: 36px; margin-top: 40px; margin-bottom: 20px; color: #CB9445;">Hackathon Winners</h1>
+
+    <div class="tabs">
+        <div class="tab active" onclick="showTab(0)">Applications (9)</div>
+        <div class="tab" onclick="showTab(1)">Benchmark (3)</div>
+        <div class="tab" onclick="showTab(2)">Fundamentals (3)</div>
+        <div class="tab" onclick="showTab(3)">Safety (3)</div>
+        <div class="tab" onclick="showTab(4)">Multiagents (3)</div>
+    </div>
+    
+    <div class="winner-container active" id="track-0">
+        <div class="winner-card">
+            <div class="placement">1st Place</div>
+            <h6 style="margin-top:35px">Team Eyecognito</h6>
+            <details style="font-size: 13px; text-align: left">
+                <summary style="text-align: left"><b>Abstract:</b> The U.S. moving industry, valued at $23+ billion annually, presents significant challenges for </summary>
+             consumers due to its fragmented structure, high costs, and logistical complexity. To address this, we created Smooth Operator, an innovative AI-driven solution designed to simplify the moving process. Smooth Operator automates key aspects of the moving experience, including mover selection, cost negotiation and decision-making. By leveraging a multi-agent AI workflow, it minimizes the time, effort, and financial burden of moving, while ensuring users receive optimal value from their selected service providers. Key Features: <ol type="1" style="text-align: left;">
+                <li style="font-size:13px";>Interactive Data Collection: An intelligent agent designed to seamlessly gather detailed information from users, ensuring precise data capture for tailored solutions.</li>
+                <li style="font-size:13px";>Dynamic Strategizing: A strategy-driven agent capable of adapting its approach in real-time, leveraging insights from previous conversations to refine and optimize strategies.</li>
+                <li style="font-size:13px";>Voice Call Integration: Advanced agents that can initiate voice calls, analyze conversations, and extract actionable insights to drive decision-making.</li>
+                <li style="font-size:13px";>Personalized Recommendation: Agents equipped to process complex scenarios and provide users with the most suitable mover options, enhancing efficiency and satisfaction.</li>
+                </ol>
+            </details>
+            <p class="links">
+                <a href="https://drive.google.com/open?id=1gBa0kUJZjiVmnrYih8JnY-HJ-QDQheeD">Report</a>
+                <a href="https://www.youtube.com/watch?v=HUXjFbvmS44">Demo</a>
+                <a href="https://github.com/boatcow/SmoothOperatorAI">Code</a>
+                <a href="https://drive.google.com/open?id=1Fcmoatos2Sc0JsrmrOEMvJAvlQ1NbymG">Slides</a>
+                <a href="https://eyecognito.netlify.app/llm-agents-hackathon">Website</a>
+            </p>
+            <div class="fun-fact-container" id="fact-container-0">
+                <details style="font-size: 13px">
+                    <summary><b>Team Fun Fact</b></summary>
+                    Not only did the project use AI, even the demo video and presentation were AI assisted generated. We used Gen AI to generate a compelling script and narrative as well as used Eleven labs AI voice. It also suggested relevant B-roll footage to capture audience attention.
+                </details>
+            </div>
+        </div>
+        <div class="winner-card">
+            <div class="placement">2nd Place</div>
+            <h6 style="margin-top:35px">Team ThreadFinders</h6>
+            <details style="font-size: 13px; text-align: left">
+                <summary style="text-align: left"><b>Abstract:</b> This project seeks to address one of society's most pressing and emotional challenges: reuniting </summary>
+              missing persons with their loved ones. Born from the heartbreaking stories of families torn apart by disappearances, it harnesses the power of Generative AI and Google Cloud Platform (GCP) to create a collaborative and technology-driven solution. By centralizing updates and search efforts, the platform fosters a unified approach where families, volunteers, and organizations can coordinate, communicate, and take actionable steps toward locating missing individuals. The solution not only amplifies the collective impact of these efforts but also provides families with hope and much-needed clarity during critical times.<br>At the heart of this project are specialized Generative AI agents, each contributing essential functionalities to enhance the search process. The Search Area Agent identifies key updates and visually maps progress using interactive Google Maps, while the Event Recognition Agent detects and categorizes events, pinning approximate coordinates for reference. Supporting these efforts, the Update Tracker Agent uses AI to analyze multimodal inputs, such as images and updates, and records valuable information into the centralized Google Cloud Storage. Complementing this, the Media Monitoring & Grounding Agent continuously tracks news updates via APIs, grounding the latest information for relevance and storing it for future use. Finally, the News Analyzer Agent interprets media news, offering actionable advice to optimize search strategies while maintaining safety protocols. <br> By combining these agents into a cohesive ecosystem, the project delivers a comprehensive solution that blends technology and human empathy. Whether through the visualization of search zones, strategic recommendations, or real-time updates, it ensures every piece of information is leveraged to its fullest potential. This integrated approach empowers communities and families to collaborate effectively, reaffirming the belief that no search is in vain and that technology can play a pivotal role in reuniting loved ones.</details>
+            <p class="links">
+                <a href="https://drive.google.com/open?id=1UAQyFbSduwmwXGeW21XgsZZCvAEImBO5">Report</a>
+                <a href="https://youtu.be/VFAQdGLZxHQ">Demo</a>
+                <a href="https://github.com/mbautina135/missing_ppl_search">Code</a>
+                <a href="https://drive.google.com/open?id=18WFKLzPQrgtXywbctMovvXBgnSoT-RER">Slides</a>
+            </p>
+            <div class="fun-fact-container" id="fact-container-1">
+                <details style="font-size: 13px">
+                    <summary><b>Team Fun Fact</b></summary>
+                    We’ve been best friends for six years but only met in person five times—all at conferences—because we’re always living in different places.
+                </details>
+            </div>
+        </div>
+        <div class="winner-card">
+            <div class="placement">3rd Place</div>
+            <h6 style="margin-top:35px">Team 433ventures</h6>
+            <details style="font-size: 13px; text-align: left">
+                <summary style="text-align: left"><b>Abstract:</b> US financial companies are spending more money than ever to attract new customers—costs are at an </summary>
+            all-time high. For example, US insurance companies pay up to $54.91 each time someone clicks on their search ads (according to the O&E Insurance Observatory). Over 75.7% of customers start but don’t finish filling out application forms (Formstory Blog).<br>We're introducing a new, simpler way for users to complete online applications. Our platform uses an AI agent and the OpenAI Realtime API to add an option on financial websites: ""I want an AI to call me and help complete my application."" When users select this, the AI calls them to gather the needed information over the phone, making the process easy and personal. <br> After the call, the AI fills out the application form and sends it to the user to review and confirm. If the call is interrupted, the AI continues the conversation through email or messaging apps until the application is finished or the user decides not to proceed (without spamming them). This new type of user experience makes it easier for customers to complete applications, reducing the number of people who abandon forms. </details>
+            <p class="links">
+                <a href="https://drive.google.com/open?id=1QMC7MPypk-nZr8XqjTZHFUNKcVX0MXdk">Report</a>
+                <a href="https://www.loom.com/share/90a126274f30497ca11163240d32f727">Demo</a>
+                <a href="https://github.com/433ventures/fightforms/">Code</a>
+                <a href="https://drive.google.com/open?id=197xz9MZtnQOUf49zcyXjpJFxfrLmihH9">Slides</a>
+                <a href="https://www.433v.io/">Website</a>
+            </p>
+            <div class="fun-fact-container" id="fact-container-2">
+                <details style="font-size: 13px">
+                    <summary><b>Team Fun Fact</b></summary>
+                    Our project started as a simple technical experiment to test the limits of LLMs—particularly their tool-calling capabilities—just for fun. But before we knew it, we accidentally tripped into full-blown startup mode. One moment, we were running tests; the next, we were drafting pitch decks and discussing equity splits. Oops!
+                </details>
+            </div>
+        </div>
+        <div class="winner-card">
+            <div class="placement">4th Place</div>
+            <h6 style="margin-top:35px">Team TerminAI</h6>
+            <details style="font-size: 13px; text-align: left">
+                <summary style="text-align: left"><b>Abstract:</b> TerminAI is a powerful terminal that demonstrates the working of multi-model architectures. With </summary>
+            TerminAI users can directly type in plain language what they want and have that be executed. TerminAI exhibits duality, that is, if the user enters a bash command directly, then that is immediately executed without the delays introduced by the models.<br>It is designed to help novice users familiarise themselves with the terminal, while ensuring that nothing they do, harms the system in a big way. It also helps experienced users by streamlining there usage of the terminal and allowing them to achieve more. <br> TerminAI is a complete LAM framework based on python. It can execute prompts entered by the user, leveraging Gemini to do the prompt analysis. Its elegant and looks beautiful too (whitish grey!)</details>
+            <p class="links">
+                <a href="https://drive.google.com/open?id=17_OSU6cJ4RbjncRz06uQIhrnvbog1aps">Report</a>
+                <a href="https://youtu.be/nFkwPLMH3D4">Demo</a>
+                <a href="https://github.com/pUrGe12/TerminAI_V2">Code</a>
+                <a href="https://drive.google.com/open?id=1LdKbH8utxLEx75kyccw8z5dlgN9FMb51">Slides</a>
+            </p>
+            <div class="fun-fact-container" id="fact-container-2">
+                <details style="font-size: 13px">
+                    <summary><b>Team Fun Fact</b></summary>
+                    I worked solo on this project, but it wouldn’t have started without my friend. While I was explaining my idea to him, he pulled up this hackathon and said, ‘If you’re doing it, why not submit it here?’ Though he was leading another competition and couldn’t code with me, he had a key insight that pushed us to pivot midway. That led to Version 2, and I spent weeks refining and building it. It’s been an intense but rewarding journey, and I’m glad to see it all come together. 
+                </details>
+            </div>
+        </div>
+        <div class="winner-card">
+            <div class="placement">5th Place</div>
+            <h6 style="margin-top:35px">Team StoryLabs</h6>
+            <details style="font-size: 13px; text-align: left">
+                <summary style="text-align: left"><b>Abstract:</b> StoryLabs is a full-stack web app leveraging multimodal AI to engage and grow with young readers </summary>
+             through stories. For busy parents, finding engaging, personalised reading material for children is challenging. Traditional books fail to adapt to each child’s interests, reading level, and rapidly evolving abilities, leaving parents struggling to keep up. StoryLabs addresses this gap by transforming the reading experience into an interactive, personalised journey.<br>StoryLabs leverages AI to create tailored stories that match a child’s unique needs. With dynamic illustrations, captivating voiceovers, and adaptive storytelling, it brings tales to life. We even include the child in the story! Designed to grow with the child, StoryLabs ensures an engaging and scalable reading experience. <br> StoryLabs empowers children to become curious explorers while providing parents with a tool that generates resources personalised for their child. By fostering a love for reading through personalised, magical adventures, StoryLabs is reimagining how children learn and grow with technology.</details>
+            <p class="links">
+                <a href="https://drive.google.com/file/d/15mpp0cDO57ftDrA5oga9-cP40OUQqeHD/view?usp=sharing">Report</a>
+                <a href="https://www.youtube.com/watch?v=Mj4x5yKhM-c">Demo</a>
+                <a href="https://github.com/erniesg/storylabs">Code</a>
+                <a href="https://drive.google.com/open?id=17uEvkCFpE0omjdMqqseWBmbkFoQWL9Q2">Slides</a>
+            </p>
+            <div class="fun-fact-container" id="fact-container-4">
+                <details style="font-size: 13px">
+                    <summary><b>Team Fun Fact</b></summary>
+                    Yeo Cheng Yong and Chen Enjiao (Ernie) are engineers building data-driven applications for the newsroom at Tech in Asia in Singapore. Sparked by Cheng Yong’s quest to support her child’s reading challenges and Ernie’s experience in AI storytelling, they created StoryLabs — an app that crafts personalized stories with rich media to give kids a unique reading experience.
+                </details>
+            </div>
+        </div>
+        <div class="winner-card">
+            <div class="placement">6th Place (tie)</div>
+            <h6 style="margin-top:35px">Team Noon Bekesh</h6>
+            <details style="font-size: 13px; text-align: left">
+                <summary style="text-align: left"><b>Abstract:</b> The hAIre project revolutionizes the HR recruitment process by leveraging advanced AI to </summary>
+           streamline interviews, improve candidate evaluations, and ensure data privacy. Designed to address inefficiencies in traditional hiring methods, hAIre integrates a multi-agent system with modular components, including automated CV screening, dynamic question generation, and real-time evaluation. Its user-friendly HR dashboard allows customizable interview setups, enabling job-specific configurations and multilingual support. With robust anonymization and GDPR compliance, it protects sensitive data while enhancing inclusivity.<br>Key innovations include AI-driven adaptive interviews, a detailed reporting module for structured feedback, and scalable architecture for real-time decision-making. The platform supports comprehensive candidate assessments through speech-to-text (STT), text-to-speech (TTS), and large language model (LLM) integration. Future directions involve facial and audio analysis for emotional insights, an HR analytics dashboard for data-driven hiring strategies, and human-in-the-loop systems for nuanced decision-making. By automating routine tasks and ensuring consistency, hAIre empowers HR teams to focus on strategic talent acquisition, setting a new standard in AI-enhanced recruitment.</details>
+            <p class="links">
+                <a href="https://drive.google.com/open?id=1WBNQ2ARGjfOO4hWN7Aud4tpeIo2FTU2p">Report</a>
+                <a href="https://youtu.be/dzLPczsP8Ck">Demo</a>
+                <a href="https://github.com/eyenpi/hAIre-core">Code</a>
+                <a href="https://drive.google.com/open?id=1edR9JRc2oW5WGLVyBHf2OSg2CSCEoYhw">Slides</a>
+            </p>
+            <div class="fun-fact-container" id="fact-container-5">
+                <details style="font-size: 13px">
+                    <summary><b>Team Fun Fact</b></summary>
+                    Our team, Noon Bekesh, is named after the fine art of sopping up every last bit of food with bread in Persian, similar to scarpetta in Italy. Not for the environment, though… Financially, we’re one step away from eating the pan itself.
+                </details>
+            </div>
+        </div>
+        <div class="winner-card">
+            <div class="placement">6th Place (tie)</div>
+            <h6 style="margin-top:35px">Team Recall</h6>
+            <details style="font-size: 13px; text-align: left">
+                <summary style="text-align: left"><b>Abstract:</b> Recall is an agentic system for interactive videos. Our project’s goal is to build a video system capable </summary>
+           of supporting chat style interactions with the user. Our narrow focus is on presentation style videos, such as in a conference, workshops or in MOOCs like this LLM Agents Berkeley Course. The project aims to allow users to interact with videos through a chat-like interface, where the system responds with video snippets from the source video and can handle factual questions, summarization, and explanation-style interactions. This system has several potential applications, such as an AI-based teaching assistant for MOOCs, engaging user experiences with long videos like presentations or enterprise courses, and building an engaging video-modality-based AI tutor. <br>The overall system architecture involves users interacting with the system through a multimodal content input, which goes through a (i) video and document ingestion pipeline to index the video, create a knowledge base and store the indexed content in it and then (ii) the inference pipeline that uses and processes the recall knowledge base to interact with the user. Both components use an Agentic design as multiple calls are made to OpenAI LLMs using carefully RAG-crafted prompts. We use Langfuse for tracing, data collecting and eval measurement. The ingestion pipeline handles long videos from 1 to 8 hours in duration, as well as related online content, such as PDFs or text documents. The inference pipeline handles user queries, including real-time voice interaction. The tech stack includes a combination of Streamlit/Replit for the frontend, Whisper/CLIP/GPT4o/OpenAI-embedding for LLMs, QdrantDb for vector database, and OpenAI Realtime API for voice interaction. <br> Video Ingestion Pipeline: The content ingestion pipeline processes documents by chunking and sharding, then uses an embedding model to create document embeddings and stores them. The video is also transcribed, and the transcript is chunked, embedded, and stored. Audio transcription with timestamps is accomplished using the Whisper model, which can be extended to multilingual support, and these timestamps are used as an index to match against video segments. Video content is processed using a keyframe image sequencer, which converts video into significant frames using a CLIP-like model and extracts text, then embeds and stores them. The keyframe video sequencer allows for some experimentation with different implementations of keyframe-making algorithms. Related textual documents are parsed using text/pdf document parser/chunking. The knowledge base stores vector embeddings for images, textual documents, transcriptions, original video content, and related metadata for snippet generation. <br> Recall Inference Pipeline: The inference pipeline begins with a user query that is processed through a query planner using an LLM agent, converted to embeddings, and then a retriever. Retrieved documents are then used to generate a textual response using an LLM agent as well as the corresponding video snippets. The aggregated response is then returned to the user. The video inference pipeline includes a query planner that converts user input into one or more queries, context creation using RAG-style retrieval of textual content and related images, LLM-based response generation given context, LLM-based snippet timestamp generation by matching response to snippet timestamps, snippet output generation and a video player with a websocket control channel, and integration with OpenAI Realtime API for voice-based user experience.</details>
+            <p class="links">
+                <a href="https://drive.google.com/open?id=1iyxkG0UZtkuahAWgUsAOJQM_ypC92W9C">Report</a>
+                <a href="https://youtu.be/kDMSJKXfXvI">Demo</a>
+                <a href="https://github.com/RecallHQ/recallhq">Code</a>
+                <a href="https://drive.google.com/open?id=1gk0Yo0gHQy-67gkjckcmEk1y_wPAVxyh">Slides</a>
+            </p>
+        </div>
+        <div class="winner-card">
+            <div class="placement">8th Place</div>
+            <h6 style="margin-top:35px">Team Youth-AI-Safety</h6>
+            <details style="font-size: 13px; text-align: left">
+                <summary style="text-align: left"><b>Abstract:</b> Youth-AI-Safety @ UIUC SALT Lab. Recent advances in Large Language Model (LLM) research have </summary> 
+            powered the rapid growth of Generative AI chatbots, offering human-like conversational experiences. As these applications gain popularity among young users, critical safety challenges emerge—ranging from boundary violations to harmful content generation—that traditional moderation systems struggle to address. To tackle these issues, we conducted an in-depth analysis of real-world youth-AI interactions, identifying unique risks specific to this context. Based on our findings, we developed YouthSafeAgent, a risk taxonomy capturing a wide spectrum of safety concerns, and designed a parental control system that leverages LLM-based risk detection. This work represents a pioneering step toward enhancing youth safety in AI-driven environments and provides a foundation for future research, policy development, and industry practices in youth-AI safety.</details>
+            <p class="links">
+                <a href="https://preview.teen-ai.salt-lab.org/">Website</a>
+            </p>
+            <div class="fun-fact-container" id="fact-container-7" style="margin-top:50px">
+                <details style="font-size: 13px">
+                    <summary><b>Team Fun Fact</b></summary>
+                    Our team, Youth-AI-Safety @ UIUC SALT Lab, has an unexpected 'Y' connection—every team member’s first name starts with the letter 'Y,' and so does our project name! It wasn’t planned, but this ‘Y’ coincidence feels like a perfect fit, symbolizing our shared focus on youth safety in the evolving world of AI.
+                </details>
+            </div>
+        </div>
+        <div class="winner-card">
+            <div class="placement">9th Place</div>
+            <h6 style="margin-top:35px">Team Guanabara AI</h6>
+            <details style="font-size: 13px; text-align: left">
+                <summary style="text-align: left"><b>Abstract:</b> Our project aims to reduce the cognitive burden faced by professional traders. By developing a </summary>
+             multi-agent framework called FinSage, we can help traders analyze complex market information by efficiently filtering through noise to deliver the most relevant and accurate data within minutes. Our approach seeks to enable traders to quickly uncover actionable insights for informed trading decisions.<br>FinSage consists of six specialized agents, each with a distinct role: <ol type="1" style="text-align: left;">
+                <li style="font-size:13px";>Supervisor Agent: Orchestrates overall operations and manages which agents to activate for each query.</li>
+                <li style="font-size:13px";>Financial Metrics Agent: Provides comprehensive technical metrics for analyzing a company's financial health and stock performance.</li>
+                <li style="font-size:13px";>News Sentiment Agent: Analyzes sentiment across company news and specific market sectors.</li>
+                <li style="font-size:13px";>SQL Agent: Accesses a historical database containing data from 2009 to 2022 for 57 NYSE-listed companies.</li>
+                <li style="font-size:13px";>Synthesizer Agent: Combines data collected by other technical agents to generate concise, actionable answers to user queries.</li></ol></p>
+            <p class="abstract" id="fact-8">Users can personalize their experience by entering their trading profile. FinSage then tailors its responses and recommendations based on the user's risk tolerance, investment style, and expected return time horizon. The application is intuitive—users simply input their trading profile and a specific question like, Should I buy META stocks today?" and FinSage will come with a response.</details>
+            <p class="links">
+                <a href="https://drive.google.com/open?id=1dmL2zF47rnWBkvg6pZVb9rBPZAZfzhAl">Report</a>
+                <a href="https://youtu.be/JueemUlFuiQ">Demo</a>
+                <a href="https://github.com/kashyaprajharsh/project_triton">Code</a>
+                <a href="https://drive.google.com/open?id=1OxUU94jiV8TcmSKZOPUaoRbzeo0No51C">Slides</a>
+            </p>
+            <div class="fun-fact-container" id="fact-container-8">
+                <details style="font-size: 13px">
+                    <summary><b>Team Fun Fact</b></summary>
+                    The team came together through shared passion and collaboration on the Kaggle platform. Some members were once mentored by the team leaders, while others were long-time hackathon partners. Their combined experience, teamwork, and camaraderie ultimately led them to win this exciting challenge!
+                </details>
+            </div>
+        </div>
+    </div>
+    
+    <div class="winner-container active" id="track-1">
+        <div class="winner-card">
+            <div class="placement">1st Place</div>
+            <h6 style="margin-top:35px">Team TBD</h6>
+            <details style="font-size: 13px; text-align: left">
+                <summary style="text-align: left"><b>Abstract:</b> Tabular data, prevalent in fields like medicine, finance, and science, presents unique challenges </summary>
+            due to its structural complexity and heterogeneous nature. While Large Language Models (LLMs) such as GPT-4o and LLaMA excel in unstructured data tasks, they face limitations in handling the structured, multidimensional nature of tabular data and performing complex reasoning. This paper introduces DataSense, a comprehensive benchmark designed to evaluate LLMs' capabilities in processing tabular data across multiple domains and task types.<br>DataSense distinguishes itself from existing benchmarks by focusing on multi-domain data analytics and synthesizing diverse questions across business intelligence, CRM, demographics data, and research data. The benchmark comprises 230 questions across 13 tables from 9 different datasets, evaluating three key areas: data curation, information retrieval, and statistical analysis. Questions are categorized into three difficulty levels and designed to test various aspects of tabular data processing, from simple value retrieval to complex multi-hop reasoning tasks. <br>The study evaluated four prominent LLMs (Claude 3.5 Sonnet, GPT-4o, Gemini-1.5 Pro, and GPT-3.5 Turbo) using the LangChain framework. Results showed that Claude 3.5 Sonnet performed best overall with 68.3% accuracy, followed by GPT-4o (58.3%) and Gemini-1.5 Pro (55.2%), while GPT-3.5 Turbo achieved 37.4%. The research revealed that while LLMs excel at data curation tasks (with accuracies ranging from 72.2% to 86.1%), they struggle significantly with multi-step reasoning and multi-table operations, particularly in domain-specific contexts like CRM data analysis.<br>These findings highlight both the potential and limitations of current LLMs in handling tabular data tasks. While they show promise for automating data curation and simple analysis tasks, there remains significant room for improvement in complex reasoning scenarios and multi-table operations. This benchmark provides a valuable tool for assessing and comparing LLM capabilities in tabular data processing, while also identifying specific areas requiring further development.</details>
+            <p class="links">
+                <a href="https://drive.google.com/open?id=17ff0DyWRMIlDXQNchlKRbXZ2M5BLcCcK">Report</a>
+                <a href="https://youtu.be/kKkLAH1x2Rg">Demo</a>
+                <a href="https://github.com/raywanb/DataSenseQA">Code</a>
+                <a href="https://drive.google.com/open?id=1m31ugyFDg1wbGZa_bGIBsDZaf7M1zgsR">Slides</a>
+            </p>
+            <div class="fun-fact-container" id="fact-container-9">
+                <details style="font-size: 13px">
+                    <summary><b>Team Fun Fact</b></summary>
+                    A fun fact about our team involves the team name TBD (to be declared), which later turned out to be perfectly fitting and now stands for team benchmark data.
+                </details>
+            </div>
+        </div>
+        <div class="winner-card">
+            <div class="placement">2nd Place</div>
+            <h6 style="margin-top:35px">Team iVISPAR</h6>
+            <details style="font-size: 13px; text-align: left">
+                <summary style="text-align: left"><b>Abstract:</b> Large Vision-Language Models (LVLMs) are known to face challenges with spatial reasoning and </summary>
+            visual alignement. iVISPAR addresses this limitation by providing an interactive benchmark designed to evaluate the spatial and visual-spatial reasoning capabilities of LVLMs as agents. The benchmark focuses on a selected scenario: the sliding tile puzzle, a classic problem that requires logical planning, spatial awareness, and multi-step problem-solving.</details>
+            <p class="links">
+                <a href="https://arxiv.org/abs/2502.03214">Report</a>
+                <a href="https://www.youtube.com/watch?v=6s1ova1tgwo&feature=youtu.be">Demo</a>
+                <a href="https://github.com/SharkyBamboozle/iVISPAR/tree/main">Code</a>
+                <a href="https://drive.google.com/open?id=1JGfMGEsx06CvSfuEEcmMgD_8TyR_a5_j">Slides</a>
+            </p>
+        </div>
+        <div class="winner-card">
+            <div class="placement">3rd Place</div>
+            <h6 style="margin-top:35px">Team LLMS are Good Good</h6>
+            <details style="font-size: 13px; text-align: left">
+                <summary style="text-align: left"><b>Abstract:</b> Vision and Language Navigation (VLN) in real-world environments has long been a core </summary>
+            challenge in AI research. While previous studies have made strides in developing intelligent agents, many of these efforts have been limited by overly controlled or synthetic environments. To overcome the limitations, this paper introduces a novel benchmark aimed at pushing the capabilities of language agents in real-world vision, reasoning, and decision-making. Drawing inspiration from the Scavenger Hunt game at UC Berkeley, we design a series of experiments where agents navigate complex urban street environments to accomplish specified tasks. Our benchmark not only evaluates an agent’s ability to perceive and understand its surroundings but also measures its performance in questioning, action reasoning, and efficiency.<br>This benchmark provides a robust foundation for advancing future research in real-world Vision and Language Navigation.</details>
+            <p class="links">
+                <a href="https://drive.google.com/open?id=1H7gPRnmaYEj4csGI1GHdlVnwKTAelhw_">Report</a>
+                <a href="https://drive.google.com/drive/folders/1I0CfSKPIilZk__pB_aDKOydfYclBj1Wo?usp=drive_link">Demo</a>
+                <a href="https://github.com/Kyunnilee/llm_scavengerhunt">Code</a>
+                <a href="https://drive.google.com/open?id=1abkJnyMfVCvwc0MLhdSnIjh5NqcxMJEp">Slides</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="winner-container active" id="track-2">
+        <div class="winner-card">
+            <div class="placement">1st Place</div>
+            <h6 style="margin-top:35px">Team o1-maximum</h6>
+            <details style="font-size: 13px; text-align: left">
+                <summary style="text-align: left"><b>Abstract:</b> Large Language Models (LLMs) excel in reasoning and in-context learning but often struggle in </summary>
+            real-world scenarios where tasks are ambiguous or under-specified. Fine-tuning such models for specific environments is impractical due to computational and data constraints. To address these limitations, we introduce Self-Supervised Explorative Agent Learning (SSEAL), a novel framework that enables black-box agents to autonomously adapt to their environments. SSEAL systematically enhances task performance by leveraging self-supervised exploration to optimize input prompts, resolving ambiguities before task execution.<br>SSEAL operates in two phases: exploration and execution. During the one-time exploration phase, the agent interacts with the environment to clarify its structure and generate insights. This understanding is then used to create optimized prompts containing clarified task instructions, updated environmental context, and/or few-shot examples derived from the exploration. In the execution phase, the optimized prompt guides task performance, ensuring accuracy and reducing ambiguity. Notably, SSEAL treats the model as a black box, requiring no changes to its internal parameters, making it a lightweight and adaptable solution.<br>We demonstrate SSEAL's effectiveness through extensive experiments across diverse tasks, including function calling, model hierarchies, robotics, and software engineering. In function-calling tasks, SSEAL improves accuracy from 5% to over 80% in challenging benchmarks like NexusBench and achieves significant gains in real-world-inspired environments such as LinuxTerminal. In model hierarchies, SSEAL transfers exploration findings from stronger to weaker models, enabling smaller models to achieve comparable performance at reduced costs. In robotics, SSEAL enhances task success rates by 9%, and in software engineering, it improves tool-calling accuracy for development agents. These results showcase SSEAL's potential as a computationally efficient framework for long-term, high-performance deployments.</details>
+            <p class="links">
+                <a href="https://drive.google.com/open?id=1VIVxXAjX-VjbCpQLRAhLXPW45uf3oSFR">Report</a>
+                <a href="https://youtu.be/i2Y59EfgjTI">Demo</a>
+                <a href="https://github.com/efrick2002/SSEAL">Code</a>
+                <a href="https://drive.google.com/open?id=1GcivllbVilVg7tbthspamONuooJKFRYH">Slides</a>
+            </p>
+        </div>
+        <div class="winner-card">
+            <div class="placement">2nd Place</div>
+            <h6 style="margin-top:35px">Team TARS</h6>
+            <details style="font-size: 13px; text-align: left">
+                <summary style="text-align: left"><b>Abstract:</b> TARS: Team for Advanced Reasoning Systems. LLM-based agents have the potential for immense </summary>
+            impact across various applications. However, existing work typically develops architectures for specific environments, which falls short of commercial scalability, offers no clear path towards general intelligence, and suffers from the fundamental limitation of autoregressive LLMs. On the other hand, humans are generalists who achieve goals in diverse environments with a single cognitive architecture. Furthermore, human reasoning is not just linear, autoregressive reasoning, but also include forward-looking, simulation-based reasoning using an internal world model.<br>Inspired by these insights, we develop AgentModel, a general architecture for optimal goal-oriented agents. AgentModel formulates decision-making as maximizing the probability of achieving goals over latent representations of agent trajectories, which involves proposing plans, simulating the outcomes using a world model, and evaluating goal achievement. Combined with additional modules such as perception, memory, and acting, AgentModel can flexibly plan in a wide range of environments using the latent representation space of natural language, while overcoming the limitation of autoregressive LLM reasoning by fully exploring each option and correcting errors. <br>In extensive experiments on web browsing tasks, our proposed architecture improves the success of flight search from 0% to 32.2%, while world model planning shows consistent advantage of up to 124% over autoregressive planning, which demonstrates the advantage of world model simulation as a reasoning paradigm.</details>
+            <p class="links">
+                <a href="https://drive.google.com/open?id=1mUGjTT6Yk2zw8ezxdUGiXEbhNQFUPURW">Report</a>
+                <a href="https://youtu.be/ujZ7RblurQw">Demo</a>
+                <a href="https://github.com/jinyu-hou/agent-model">Code</a>
+                <a href="https://drive.google.com/open?id=1HZL3tLqDkve66TDqylaAaAt5XE0eTdhO">Slides</a>
+                <a href="https://reasoner-agent.maitrix.org/">Website</a>
+            </p>
+            <div class="fun-fact-container" id="fact-container-1">
+                <details style="font-size: 13px">
+                    <summary><b>Team Fun Fact</b></summary>
+                    Both of the team members love natto but neither are Japanese ;)
+                </details>
+            </div>
+        </div>
+        <div class="winner-card">
+            <div class="placement">3rd Place</div>
+            <h6 style="margin-top:35px">Team Cognitive LLM Agents</h6>
+            <details style="font-size: 13px; text-align: left">
+                <summary style="text-align: left"><b>Abstract:</b> Existing multi-agent approaches (ReAct, AutoGen) often rely on multiple task-specific agents </summary>
+            who coordinate through structured roles and predefined communication patterns. This allows them to generate reasoning traces and task-specific actions in a sequential manner, allowing them to solve interactive tasks more effectively than imitation and reinforcement learning. However, this approach limits their generalization to diverse environments and types of problems. We aim to design a system of specialized LLM agents that collaborate based on core cognitive functions such as memory, summarizer, observer, evaluator, and learner. We believe human intelligence emerges from the communication of information between multiple specialized subsystems responsible for different cognitive processes, and our goal is to mimic this with a multiagent system. We apply our approach, named SallCo, on the ALFWorld dataset. We demonstrate the effectiveness of our approach by showing that it receives superior results to the baseline AutoGen approach, using only the assistant, environment proxy, grounding and execution agents.</details>
+            <p class="links">
+                <a href="https://drive.google.com/open?id=1PvBUrHPHFRyFu0EKlRoGKNOgeRyeYI65">Report</a>
+                <a href="https://www.youtube.com/watch?v=uWljiqRtnvY">Demo</a>
+                <a href="https://github.com/project194-cognitivellm/cognitivellm">Code</a>
+                <a href="https://drive.google.com/open?id=1Kr0tGEaDoCDL_KG-QBHwO7Z-x6fgeA27">Slides</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="winner-container active" id="track-3">
+        <div class="winner-card">
+            <div class="placement">1st Place</div>
+            <h6 style="margin-top:35px">Team ForesAIght</h6>
+            <details style="font-size: 13px; text-align: left">
+                <summary style="text-align: left"><b>Abstract:</b> Recent studies have discovered that LLMs have serious privacy leakage concerns, where an </summary>
+             LLM may be “fooled” into outputting private information under carefully crafted adversarial prompts. These risks include leaking system prompts, personally identifiable information, training data, and model parameters. Most existing red-teaming approaches for privacyleakage rely on humans to craft the adversarial prompts. A few automated methods are proposed for system prompt extraction, but they cannot be applied to more severe risks (e.g., trainingdata extraction) and have limited effectiveness even for systemprompt extraction.<br>In this paper, we propose PrivAgent, a novel black-box red-teaming framework for LLM privacy leakage. We formulate different risks as a search problem with a unified attack goal. Our framework trains an open-source LLM through reinforcement learning as the attack agent to generate adversarial prompts for different target models under different risks. We propose a novel reward function to provide effective and fine-grained rewards for the attack agent. We also design novel mechanisms to balance exploration and exploitation during learning and enhance the diversity of adversarial prompts. Finally, we introduce customizations to better fit our general framework to system prompt extraction and training data extraction. Through extensive evaluations, we first show that PrivAgent outperforms existing automated methods in system prompt leakage against six popular LLMs. Notably, our approach achieves a 100% success rate in extracting system prompts from real-world applications in OpenAI’s GPT Store.We also show PrivAgent’s effectiveness in extracting training data from an open-source LLM with a success rate of 5.9%.We further demonstrate PrivAgent’s effectiveness in evading the existing guardrail defense and its helpfulness in enablingbetter safety alignment. Finally, we validate our customized designs through a detailed ablation study. We release our codehere https://github.com/rucnyz/RedAgent.</details>
+            <p class="links">
+                <a href="https://drive.google.com/open?id=1dn34v3Xf9KuKnfxwn8jhd5lahbhIty5y">Report</a>
+                <a href="https://youtu.be/e4OpZaJvYgU">Demo</a>
+                <a href="https://github.com/rucnyz/RedAgent">Code</a>
+                <a href="https://drive.google.com/open?id=1ZMZJ121cu2Wp5YSZKFQeJkbcOJccDZQ5">Slides</a>
+            </p>
+        </div>
+        <div class="winner-card">
+            <div class="placement">2nd Place (tie)</div>
+            <h6 style="margin-top:35px">Team AgentGuard</h6>
+            <details style="font-size: 13px; text-align: left">
+                <summary style="text-align: left"><b>Abstract:</b> In this project, we propose AGENTGUARD, an autonomous testing and hardening framework for LLM </summary>
+           agent systems through the LLM tool orchestrator. It achieves testing and hardening by leveraging the LLM tool orchestrator’s innate advantages in possessing internal knowledge of tools gained during the agent-building process, the ability to explore unsafe workflows in scalable manner, and the privilege of invoking tools. By evaluating AGENTGUARD with a coding agent, we found that LLMs appeared to have limited knowledge about specific tools (SELinux). Meanwhile, we observed successful evaluation results indicating the feasibility and effectiveness of the design and providing a proof of concept of AGENTGUARD.</details>
+            <p class="links">
+                <a href="https://drive.google.com/file/d/19qnWzB0tQe4VOUW_fUKI_efk0vuVXa7b/view?usp=drive_link">Report</a>
+                <a href="https://youtu.be/IoDPOFtO2dE">Demo</a>
+                <a href="https://github.com/Jizhou-Chen/AgentGuard">Code</a>
+                <a href="https://drive.google.com/open?id=1mZFvSkorD6iEzI_uRM6rxeZr53tpfi51">Slides</a>
+            </p>
+        </div>
+        <div class="winner-card">
+            <div class="placement">2nd Place (tie)</div>
+            <h6 style="margin-top:35px">Team Hoosiers</h6>
+            <details style="font-size: 13px; text-align: left">
+                <summary style="text-align: left"><b>Abstract:</b> This project introduces a new threat called control flow hijacking, where malicious tool </summary>
+            providers manipulate descriptions and arguments to extract sensitive information and corrupt tool outputs. In this project, automated security scanner was developed to detect such threats within the two major agent development frameworks, LangChain and llama-index, uncovering that 41% of tested integrations are vulnerable to these attacks.</details>
+            <p class="links">
+                <a href="https://drive.google.com/open?id=1ciSy4m7wKMriBEq4E98Y2pPHE4s9Fo5I">Report</a>
+                <a href="https://youtu.be/AdzSfSWGIyw">Demo</a>
+                <a href="https://drive.google.com/open?id=1rp88gpWSTwU5PyCKHQZcWRccqIoeAOGI">Slides</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="winner-container active" id="track-4">
+        <div class="winner-card">
+            <div class="placement">1st Place (tie)</div>
+            <h6 style="margin-top:35px">Team Agent Lite</h6>
+            <details style="font-size: 13px; text-align: left">
+                <summary style="text-align: left"><b>Abstract:</b> Large Action Models (LAMs) have revolutionized intelligent automation, but their application in </summary>
+            healthcare faces challenges due to privacy concerns, latency, and dependency on internet access. This report introduces an on-device, multi-agent healthcare assistant that overcomes these limitations. The system utilizes smaller, task-specific agents to optimize resources, ensure scalability and high performance. Our proposed system acts as a one-stop solution for health care needs with features like appointment booking, health monitoring, medication reminders, and daily health reporting. Powered by the Qwen Code Instruct 2.5 7B model, the Planner and Caller Agents achieve an average RougeL score of 85.5 for planning and 96.5 for calling for our tasks while being lightweight for on-device deployment. This innovative approach combines the benefits of on-device systems with multi-agent architectures, paving the way for user-centric healthcare solutions.</details>
+            <p class="links">
+                <a href="https://drive.google.com/open?id=1xqXZcBsfrGJESxG_k1HGfYHfUPfH6oq8">Report</a>
+                <a href="https://youtu.be/yAynmPSm_G8">Demo</a>
+                <a href="https://github.com/sakharamg/Multi-Agent-Health-Assistant">Code</a>
+                <a href="https://drive.google.com/open?id=1tqf2a7u9-Uqt_mavYqFFSKKOrjK4aK2m">Slides</a>
+            </p>
+            <div class="fun-fact-container" id="fact-container-0">
+                <details style="font-size: 13px">
+                    <summary><b>Team Fun Fact</b></summary>
+                    Many of our ideas for the hackathon were brainstormed over steaming cups of chai!
+                </details>
+            </div>
+        </div>
+        <div class="winner-card">
+            <div class="placement">1st Place (tie)</div>
+            <h6 style="margin-top:35px">Team DAMCS</h6>
+            <details style="font-size: 13px; text-align: left">
+                <summary style="text-align: left"><b>Abstract:</b> Developing intelligent agents for long-term cooperation in dynamic open-world scenarios is a </summary>
+            major challenge in multi-agent systems. Traditional Multi-agent Reinforcement Learning (MARL) frameworks like centralized training decentralized execution (CTDE) struggle with scalability and flexibility. They require centralized long-term planning, which is difficult without custom reward functions, and face challenges in processing multi-modal data. CTDE approaches also assume fixed cooperation strategies, making them impractical in dynamic environments where agents need to adapt and plan independently.<br>To address decentralized multi-agent cooperation, we propose Decentralized Adaptive Knowledge Graph Memory and Structured Communication System (DAMCS) in a novel Multi-agent Crafter environment. Our generative agents, powered by Large Language Models (LLMs), are more scalable than traditional MARL agents by leveraging external knowledge and language for long-term planning and reasoning.<br>Instead of fully sharing information from all past experiences, DAMCS introduces a multi-modal memory system organized as a hierarchical knowledge graph and a structured communication protocol to optimize agent cooperation. This allows agents to reason from past interactions and share relevant information efficiently. Experiments on novel multi-agent open-world tasks show that DAMCS outperforms LLM baselines in task efficiency and collaboration. Compared to single-agent scenarios, the two-agent scenario achieves the same goal with 63% fewer steps, and the six-agent scenario with 74% fewer steps, highlighting the importance of adaptive memory and structured communication in achieving long-term goals.</details>
+            <p class="links">
+                <a href="https://drive.google.com/file/d/1Aa0UUdTrTMK2frHUIugWg_j7rPlefQCu/view?usp=sharing">Report</a>
+                <a href="https://youtu.be/cAnoLd1EoDA">Demo</a>
+                <a href="https://anonymous.4open.science/r/multi-agent-crafter-4F61">Code</a>
+                <a href="https://drive.google.com/open?id=1lriiVNRFIRn0-JadpjtKYZm8T9psTCAF">Slides</a>
+                <a href="https://happyeureka.github.io/damcs/">Website</a>
+            </p>
+            <div class="fun-fact-container" id="fact-container-1">
+                <details style="font-size: 13px">
+                    <summary><b>Team Fun Fact</b></summary>
+                    It was all about communication and teamwork among the DAMCS team to make DAMCS agents communicate and work together! We are consistently inspired by how we collaborate in real life.
+                </details>
+            </div>
+        </div>
+        <div class="winner-card">
+            <div class="placement">3rd Place</div>
+            <h6 style="margin-top:35px">Team Trust Issues</h6>
+            <details style="font-size: 13px; text-align: left">
+                <summary style="text-align: left"><b>Abstract:</b> Decentralized multi-agent systems often lack robust mechanisms for assessing the trustworthiness and </summary>
+             credibility of individual agents when addressing different types of questions. In this work, we introduce a novel approach for tuning such systems, inspired by the multiplicative weights algorithm, to dynamically adjust the trust placed in each agent based on their past performance. Our method involves maintaining a knowledge vector for each agent, which, when compared to a given question, produces a reputation score reflecting the agent’s reliability for that particular question. By distributing these reputation signals to the agents before they collaborate on answering questions, we hypothesize that the system will collectively provide more accurate and reliable answers. This approach is especially promising for multi-agent systems where agents specialize in different domains, as it enhances interdisciplinary problem-solving by adjusting trust levels accordingly. Additionally, we propose that this method can help mitigate the influence of bad actors within the system, further improving its overall robustness and decision-making capabilities.</details>
+            <p class="links">
+                <a href="https://drive.google.com/open?id=1bHWxe2WoHFz_kxWyQMvdFSdcXThzp1a4">Report</a>
+                <a href="https://youtu.be/QzeGhdxYPzo">Demo</a>
+                <a href="https://github.com/noahratliff/CS194-Project">Code</a>
+                <a href="https://drive.google.com/open?id=1_AvuF-h5AdSt5LX3lKFw8sFUNdvc65f1">Slides</a>
+            </p>
+        </div>
+    </div>
+    
+    <script>
+        function showTab(index) {
+            document.querySelectorAll(".tab").forEach((tab, i) => {
+                tab.classList.toggle("active", i === index);
+            });
+            document.querySelectorAll(".winner-container").forEach((container, i) => {
+                container.classList.toggle("active", i === index);
+            });
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            showTab(0); // Ensure only the first tab is shown on page load
+        });
+    </script>
+
+<hr style="border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 33, 71, 0), rgba(0, 33, 71, 0.75), rgba(0, 33, 71, 0)); margin-top: 40px; margin-bottom: 40px;">
+
+<div class="container-fluid">
+  <h1 style="text-align: center; font-size: 36px; margin-top: 40px; margin-bottom: 40px; color: #CB9445;">HACKATHON TRACKS</h1>
+  <div class="d-flex flex-wrap">
+    {% for track in site.tracks %}
+      <div class="mb-3 w-100">
+        <div class="card h-100 shadow-sm d-flex flex-column align-items-center">
+          <div class="card-body">
+            <h5 class="card-title text-center">
+              {{ track.title }}
+            </h5>
+            <p class="card-text text-center">{{ track.description }}</p>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<!-- <div class="container-fluid">
+  <h1 style="text-align: center; font-size: 36px; margin-top: 40px; margin-bottom: 40px; color: #CB9445;">HACKATHON TRACKS</h1>
+  <div class="d-flex flex-wrap">
+    {% for track in site.tracks %}
+      <div class="mb-3 w-100">
+        <div class="card h-100 shadow-sm d-flex flex-column align-items-center">
+          <div class="card-body">
+            <h5 class="card-title text-center">
+              <a href="{{ track.url | absolute_url }}">{{ track.title }}</a>
+            </h5>
+            <p class="card-text text-center">{{ track.description }}</p>
+ 
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div> -->
+
+<hr style="border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 33, 71, 0), rgba(0, 33, 71, 0.75), rgba(0, 33, 71, 0)); margin-top: 40px; margin-bottom: 40px;">
+
+<h1 style="text-align: center; font-size: 36px; margin-top: 40px; margin-bottom: 20px; color: #CB9445;">TIMELINE</h1>
+
+<!-- <h3 style="text-align: center; font-size: 28px; margin-top: 20px; margin-bottom: 40px; color: #000000;">It's not too late to join! Sign up today!</h3>
+ -->
+<style>
+  table {
+    margin: 0 auto; /* center the table */
+    border-collapse: collapse;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+  }
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+</style>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Event</th> 
+  </tr>
+  <tr>
+    <td>October 21</td>
+    <td>Begin Hackathon
+      <br> 
+      <!--<a href="https://docs.google.com/forms/d/e/1FAIpQLSevYR6VaYK5FkilTKwwlsnzsn8yI_rRLLqDZj0NH7ZL_sCs_g/viewform?usp=sf_link">Participant Sign Up Open</a>; <a href="https://docs.google.com/forms/d/e/1FAIpQLSdKesnu7G_7M1dR-Uhb07ubvyZxcw6_jcl8klt-HuvahZvpvA/viewform?usp=sf_link">Team & Track Sign Up</a></td>-->
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSevYR6VaYK5FkilTKwwlsnzsn8yI_rRLLqDZj0NH7ZL_sCs_g/viewform?usp=sf_link">Participant Sign Up Open</a> (required)
+    </tr>
+  <tr>
+    <td>October 28</td>
+    <td>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdKesnu7G_7M1dR-Uhb07ubvyZxcw6_jcl8klt-HuvahZvpvA/viewform?usp=sf_link">Team Sign Up Open</a> (required)
+    </tr>
+  <tr>
+    <td>November 20</td>
+    <td>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfxhgqcKWxfs_e1xuF3yukTvIwk_0JhsaVwHizS7o9BYW9Hnw/viewform?usp=sf_link">Mid-hackathon Progress Check-in DUE</a> (optional)
+    </td>
+  </tr>
+  <tr>
+    <td>November 25</td>
+    <td>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_7YY-u-aDZ-xWYflq7FUM6R1a3rnQKg6o_ikXsProhrlgBA/viewform?usp=sf_link">Credits & API Access Sign Up DUE</a> (optional)
+      <br>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJQ_i6H5bgA5S767QZaorwkzF9_k_63I8JCed3dnlVcvKJ1w/viewform ">Compute Resources Sign Up DUE</a> (optional)
+    </td>
+  </tr>
+  <tr>
+    <td>December 19 <br> 11:59pm PST</td>
+    <td>
+       <a href="https://docs.google.com/forms/d/e/1FAIpQLSe3Y5BMGJFdI3PUIM1rtEEGI5u5kxesVxPnjb5rD4iAgSOeVw/viewform"> Fill Out Project Submission Form DUE</a> (required)
+    </td>
+  </tr>
+  <tr>
+    <td>December 20</td>
+    <td>
+       Judging (12/20 9am - 1/7 11:59pm PST)
+    </td>
+  </tr>
+  <tr>
+    <td> February 12 </td>
+    <td>
+       Winners Announced
+    </td>
+  </tr>
+</table>
+
+<hr style="border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 33, 71, 0), rgba(0, 33, 71, 0.75), rgba(0, 33, 71, 0)); margin-top: 40px; margin-bottom: 40px;">
+<h1 style="text-align: center; font-size: 36px; margin-top: 40px; margin-bottom: 40px; color: #CB9445;">HACKATHON PROGRAM SCHEDULE</h1>
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Program Session</th> 
+  </tr>
+  
+  <tr>
+    <td>November 12</td>
+    <td> Your Compute to Win the LLM Agents MOOC Hackathon - 'Get Started' Demos with Lambda
+
+      <br> 
+      <!--<a href="https://docs.google.com/forms/d/e/1FAIpQLSevYR6VaYK5FkilTKwwlsnzsn8yI_rRLLqDZj0NH7ZL_sCs_g/viewform?usp=sf_link">Participant Sign Up Open</a>; <a href="https://docs.google.com/forms/d/e/1FAIpQLSdKesnu7G_7M1dR-Uhb07ubvyZxcw6_jcl8klt-HuvahZvpvA/viewform?usp=sf_link">Team & Track Sign Up</a></td>-->
+      <a href="https://www.youtube.com/watch?v=EUzVW6oRpIo">Event Recording</a>
+    </td>
+  <tr>
+
+
+    <tr>
+      <td>November 21</td>
+      <td> Building with Intel: Tiber AI Cloud and Intel Liftoff 
+        <br>
+        <a href="https://www.youtube.com/watch?v=_Wm5guUXt54"> Event Recording</a>
+      </td>
+    <tr>
+
+      <tr>
+        <td>November 26</td>
+        <td> Workshop with Google AI: Building with Gemini for the LLM Agents MOOC Hackathon
+          <br>
+          <a href="https://www.youtube.com/watch?v=8lu0hCrfUXk"> Event Recording</a>
+        </td>
+      <tr>
+
+    <tr>
+      <td>December 3</td>
+      <td> Info Session with Sierra
+        <br> 
+        <a href="https://www.youtube.com/watch?v=-iWdjbkVgGQ"> Event Recording </a>
+      </td>
+    <tr>
+
+      
+
+
+</table>
+
+
+<hr style="border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 33, 71, 0), rgba(0, 33, 71, 0.75), rgba(0, 33, 71, 0)); margin-top: 40px; margin-bottom: 40px;">
+
+<h1 style="text-align: center; font-size: 36px; margin-top: 40px; margin-bottom: 40px; color: #CB9445;">JUDGING CRITERIA</h1>
+<h5><strong>Applications Track</strong></h5>
+<p>Strong submissions will demonstrate novel use cases addressing real-world problems, with seamless integration of the LLM agent into the target domain and intuitive UI/UX. Projects should display strong potential for impact and widespread adoption.</p>
+
+<h5><strong>Benchmarks Track</strong></h5>
+<p>Strong submissions will provide comprehensive, standardized benchmarks with clear evaluation criteria for agent capabilities. Another option is to expand and improve existing benchmarks by generating more high-quality data or curating more accurate examples. Project should enable meaningful cross-agent comparisons and offer insights into efficiency, accuracy, and generalization.</p>
+
+<h5><strong>Fundamentals Track</strong></h5>
+<p>Strong submissions will aim to enhance current LLM agent capabilities (e.g., long-term memory, planning, function calling, tool use, or multi-step reasoning). Projects should contain innovative approaches to solving complex problems autonomously.</p>
+
+<h5><strong>Safety Track</strong></h5>
+<p>Strong submissions will thoroughly define and address high-impact safety risks, proposing effective solutions, frameworks, or protocols. Projects should showcase effectiveness through comprehensive testing, validation, and evaluation.</p>
+
+<h5><strong>Decentralized and Multi-Agents Track</strong></h5>
+<p>Strong submissions will expand on limitations of existing frameworks, offering solutions for improved communication, multi-agent collaboration, and scalability. Projects should address practical challenges of real-world deployment.</p>
+
+
+
+<hr style="border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 33, 71, 0), rgba(0, 33, 71, 0.75), rgba(0, 33, 71, 0)); margin-top: 40px; margin-bottom: 40px;">
+<h1 style="text-align: center; font-size: 36px; margin-top: 40px; margin-bottom: 40px; color: #CB9445;">SUBMISSION</h1>
+<p>Project submission will happen through our <a href="https://docs.google.com/forms/d/e/1FAIpQLSe3Y5BMGJFdI3PUIM1rtEEGI5u5kxesVxPnjb5rD4iAgSOeVw/viewform">Google Form</a>. For more information, see the <a href="https://docs.google.com/document/d/1WgWLZocBFM08cVVxo9P-ZMCnHBLGmQ7v8PbH4-AwnSk/edit?usp=sharing">submission requirements</a>. Here are the following items to ensure that your project is accepted:</p>
+<ul>
+  <li><strong>Video Presentation</strong> - Include a link to your video presentation. It should be no more than 3 minutes. Your video should contain a presentation walking through your project and a recorded demo of how your project works.</li>
+  <li><strong>Presentation Slides</strong> - Include a link to your presentation slides in PDF format.</li>
+  <li><strong>Project Code</strong> - Include a Github with an informative README with steps on how to run your project. Externally link any large datasets.</li>
+  <li><strong>Documentation</strong> - Include project information that describes the findings of your project or how it works.</li>
+</ul>
+
+
+<hr style="border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 33, 71, 0), rgba(0, 33, 71, 0.75), rgba(0, 33, 71, 0)); margin-top: 40px; margin-bottom: 40px;">
+<h1 style="text-align: center; font-size: 36px; margin-top: 40px; margin-bottom: 40px; color: #CB9445;">JUDGES</h1> 
+
+<style>
+  .judge-profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:5px;
+    margin-top: 40px;
+  }
+
+  .judge-profile {
+    text-align: center;
+    width: 120px;
+    height: auto;
+  }
+
+  .judge-profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+    .judge-profile-name {
+    font-weight: bold;
+    font-size: 11px;
+    max-width: 150px; 
+  }
+
+  .judge-profile-description {
+    max-width: 120px;
+    font-weight: bold;
+    width: 150px;
+    color: gray;
+    font-size: 10px;
+    word-wrap: break-word; /* Ensures long text breaks */
+    overflow-wrap: break-word; /* Provides better compatibility */
+    text-align: center; /* Centers the text */
+  }
+</style>
+
+<div class="judge-profile-container">
+  <div class="judge-profile">
+    <img src="{{site.baseurl}}/assets/img/judges/dawn_s_berkeley.jpg" class="judge-profile-image">
+    <p>
+      <span class="judge-profile-name">Dawn Song</span> 
+      <br>
+      <span class="judge-profile-description">UC Berkeley</span>
+    </p>
+  </div>
+
+  <div class="judge-profile">
+    <img src="{{site.baseurl}}/assets/img/judges/xinyun_c_deepmind.jpg" class="judge-profile-image">
+    <p>
+      <span class="judge-profile-name">Xinyun Chen</span> 
+      <br>
+      <span class="judge-profile-description">Google DeepMind</span>
+    </p>
+  </div>
+
+  <div class="judge-profile">
+    <img src="{{site.baseurl}}/assets/img/judges/burak_g.png" class="judge-profile-image">
+    <p>
+      <span class="judge-profile-name">Burak Gokturk</span> 
+      <br>
+      <span class="judge-profile-description">Google</span>
+    </p>
+  </div>
+
+  <div class="judge-profile">
+    <img src="{{site.baseurl}}/assets/img/judges/chi_w_deepmind.png" class="judge-profile-image">
+    <p>
+      <span class="judge-profile-name">Chi Wang</span> 
+      <br>
+      <span class="judge-profile-description">Google DeepMind</span>
+    </p>
+  </div>
+
+  <div class="judge-profile">
+    <img src="{{site.baseurl}}/assets/img/judges/shunyu_y_oai.jpeg" class="judge-profile-image">
+    <p>
+      <span class="judge-profile-name">Shunyu Yao</span> 
+      <br>
+      <span class="judge-profile-description">OpenAI</span>
+    </p>
+  </div>
+
+  <div class="judge-profile">
+    <img src="{{site.baseurl}}/assets/img/judges/yuangdong_fair.png" class="judge-profile-image">
+    <p>
+      <span class="judge-profile-name">Yuandong Tian</span> 
+      <br>
+      <span class="judge-profile-description">Meta AI</span>
+    </p>
+  </div>
+
+  <div class="judge-profile">
+    <img src="{{site.baseurl}}/assets/img/judges/edwin_a_oai.jpeg" class="judge-profile-image">
+    <p>
+      <span class="judge-profile-name">Edwin Arbus</span> 
+      <br>
+      <span class="judge-profile-description">OpenAI</span>
+    </p>
+  </div>
+
+</div>
+
+
+
+
+
+<div class="judge-profile-container">
+  <div class="judge-profile">
+    <img src="{{site.baseurl}}/assets/img/judges/rahul_u_intel.jpeg" class="judge-profile-image">
+    <p>
+      <span class="judge-profile-name" style="font-size: 10px;">Rahul Unnikrishnan Nair </span> 
+      <br>
+      <span class="judge-profile-description">Intel</span>
+    </p>
+  </div>
+
+  <div class="judge-profile">
+    <img src="{{site.baseurl}}/assets/img/judges/chuanli.jpg" class="judge-profile-image">
+    <p>
+      <span class="judge-profile-name" style="font-size: 10px;">Chuan Li</span> 
+      <br>
+      <span class="judge-profile-description">Lambda</span>
+    </p>
+  </div>
+
+  <div class="judge-profile">
+    <img src="{{site.baseurl}}/assets/img/judges/henry_xiao.png" class="judge-profile-image">
+    <p>
+      <span class="judge-profile-name" style="font-size: 10px;">Henry Xiao</span> 
+      <br>
+      <span class="judge-profile-description">AMD</span>
+    </p>
+  </div>
+
+  <div class="judge-profile">
+    <img src="{{site.baseurl}}/assets/img/judges/will_l_orby.jpg" class="judge-profile-image">
+    <p>
+      <span class="judge-profile-name">Will Lu</span> 
+      <br>
+      <span class="judge-profile-description">Orby AI</span>
+    </p>
+  </div>
+
+  <div class="judge-profile">
+    <img src="{{site.baseurl}}/assets/img/judges/elie_b_deepmind.jpg" class="judge-profile-image">
+    <p>
+      <span class="judge-profile-name">Elie Bursztein</span> 
+      <br>
+      <span class="judge-profile-description">Google DeepMind</span>
+    </p>
+  </div>
+
+  <div class="judge-profile">
+    <img src="{{site.baseurl}}/assets/img/judges/soheil_k_anthropic.jpeg" class="judge-profile-image">
+    <p>
+      <span class="judge-profile-name">Soheil Koushan</span> 
+      <br>
+      <span class="judge-profile-description">Anthropic</span>
+    </p>
+  </div>
+
+  <div class="judge-profile">
+    <img src="{{site.baseurl}}/assets/img/judges/shai_l_anthropic.jpeg" class="judge-profile-image">
+    <p>
+      <span class="judge-profile-name">Shai	Limonchik</span> 
+      <br>
+      <span class="judge-profile-description">Anthropic</span>
+    </p>
+  </div>
+
+</div>
+
+
+
+
+
+<div class="judge-profile-container" style="align-items: center;">
+
+  <div class="judge-profile">
+    <img src="{{site.baseurl}}/assets/img/judges/caiming_x_salesforce.webp" class="judge-profile-image">
+    <p>
+      <span class="judge-profile-name">Caiming Xiong</span> 
+      <br>
+      <span class="judge-profile-description">Salesforce</span>
+    </p>
+  </div>
+
+  <div class="judge-profile">
+    <img src="{{site.baseurl}}/assets/img/judges/jason_w_salesforce.jpeg" class="judge-profile-image">
+    <p>
+      <span class="judge-profile-name">Jason Wu</span> 
+      <br>
+      <span class="judge-profile-description">Salesforce</span>
+    </p>
+  </div>
+  <div class="judge-profile">
+    <img src="{{site.baseurl}}/assets/img/judges/tim_w_adept.jpeg" class="judge-profile-image">
+    <p>
+      <span class="judge-profile-name">Tim Weingarten</span> 
+      <br>
+      <span class="judge-profile-description">Adept AI Labs</span>
+    </p>
+  </div>
+
+  <div class="judge-profile">
+    <img src="{{site.baseurl}}/assets/img/judges/josh_a_imbue_crop.png" class="judge-profile-image">
+    <p>
+      <span class="judge-profile-name">Josh Albrecht</span> 
+      <br>
+      <span class="judge-profile-description">Imbue</span>
+    </p>
+  </div>
+  <div class="judge-profile">
+    <img src="{{site.baseurl}}/assets/img/judges/rumman_c_humane.webp" class="judge-profile-image">
+    <p>
+      <span class="judge-profile-name">Rumman	Chowdhury</span> 
+      <br>
+      <span class="judge-profile-description">Humane Intelligence</span>
+    </p>
+  </div>
+  <div class="judge-profile">
+    <img src="{{site.baseurl}}/assets/img/judges/alok_t_palo.png" class="judge-profile-image">
+    <p>
+      <span class="judge-profile-name">Alok Tongaonkar</span> 
+      <br>
+      <span class="judge-profile-description">Palo Alto Networks</span>
+    </p>
+  </div>
+
+  <div class="judge-profile">
+    <img src="{{site.baseurl}}/assets/img/judges/anand_r_cisco.jpeg" class="judge-profile-image">
+    <p>
+      <span class="judge-profile-name">Anand Raghavan</span> 
+      <br>
+      <span class="judge-profile-description">Cisco</span>
+    </p>
+  </div>
+
+</div>
+
+
+
+<div class="judge-profile-container">
+  <div class="judge-profile">
+    <img src="{{site.baseurl}}/assets/img/judges/pushkar_n.jpg" class="judge-profile-image">
+    <p>
+      <span class="judge-profile-name">Pushkar Nandkar<span> 
+      <br>
+      <span class="judge-profile-description">SambaNova Systems</span>
+    </p>
+  </div>
+
+  <div class="judge-profile">
+    <img src="{{site.baseurl}}/assets/img/judges/chenxi_w_rain.jpg" class="judge-profile-image">
+    <p>
+      <span class="judge-profile-name">Chenxi Wang<span> 
+      <br>
+      <span class="judge-profile-description">Rain Capital</span>
+    </p>
+  </div>
+
+  <div class="judge-profile">
+    <img src="{{site.baseurl}}/assets/img/judges/riley_c.jpg" class="judge-profile-image">
+    <p>
+      <span class="judge-profile-name">Corinne Riley<span> 
+      <br>
+      <span class="judge-profile-description">Greylock Partners</span>
+    </p>
+  </div>
+
+  <div class="judge-profile">
+    <img src="{{site.baseurl}}/assets/img/judges/rajko_r_a16_crop.png" class="judge-profile-image">
+    <p>
+      <span class="judge-profile-name">Rajko Radovanovic</span> 
+      <br>
+      <span class="judge-profile-description">a16z</span>
+    </p>
+  </div>
+
+  <div class="judge-profile">
+    <img src="{{site.baseurl}}/assets/img/judges/daniel_m_unsupervised.png" class="judge-profile-image">
+    <p>
+      <span class="judge-profile-name">Daniel Miessler</span> 
+      <br>
+      <span class="judge-profile-description">Unsupervised Learning</span>
+    </p>
+  </div>
+  
+
+  <div class="judge-profile">
+    <img src="{{site.baseurl}}/assets/img/judges/julian_s.jpg" class="judge-profile-image">
+    <p>
+      <span class="judge-profile-name">Julian Stastny</span> 
+      <br>
+      <span class="judge-profile-description">Center on Long Term Risk</span>
+    </p>
+  </div>
+
+  <div class="judge-profile">
+    <img src="{{site.baseurl}}/assets/img/judges/henry_s.jpg" class="judge-profile-image">
+    <p>
+      <span class="judge-profile-name">Henry Sleight</span> 
+      <br>
+      <span class="judge-profile-description">MATS</span>
+    </p>
+  </div>
+
+</div>
+
+
+
+<style>
+  .sponsor-banner-container {
+    display: flex;            /* Use flexbox for centering */
+    justify-content: center;  /* Center horizontally */
+    margin: 40px 0;          /* Add top and bottom margin */
+  }
+
+  .sponsor-banner-img {
+    width: auto;              
+    height: 20%;              
+    max-width: 100%;          /* Prevent overflow */
+    display: block;           /* Block display for centering */
+  }
+</style>
+
+
+<hr style="border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 33, 71, 0), rgba(0, 33, 71, 0.75), rgba(0, 33, 71, 0)); margin-top: 40px; margin-bottom: 40px;">
+<!-- Banner that includes all of the sponsor logos -->
+<div class="sponsor-banner-container">
+  <img src="{{site.baseurl}}/assets/img/sponsor_banner.png" alt="Banner Image"
+  class="sponsor-banner-img">
+</div>
+
+<hr style="border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 33, 71, 0), rgba(0, 33, 71, 0.75), rgba(0, 33, 71, 0)); margin-top: 40px; margin-bottom: 40px;">
+
+
+<style>
+  form {
+    width: 95%;
+    max-width: 500px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 5px;
+  }
+  
+  input[type="submit"] {
+    background-color: #CB9445;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    font-weight: bold;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 22px;
+  }
+</style>
+
+<a id="signup"></a>
+<!-- Begin Mailchimp Signup Form -->
+<div id="mc_embed_shell">
+      <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:90%; max-width:600px; margin:0 auto;}
+        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+    <form action="https://berkeley.us14.list-manage.com/subscribe/post?u=0d89bb5c8066a9533eb98759d&amp;id=c0a5c3e877&amp;f_id=00aab7e5f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+        <div id="mc_embed_signup_scroll"><h2>Join the mailing list to stay informed!</h2>
+            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+            <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div><div class="mc-field-group"><label for="mce-FNAME">First Name <span class="asterisk">*</span></label><input type="text" name="FNAME" class="required text" id="mce-FNAME" value="" required=""></div><div class="mc-field-group"><label for="mce-LNAME">Last Name <span class="asterisk">*</span></label><input type="text" name="LNAME" class="required text" id="mce-LNAME" value="" required=""></div>
+<div hidden=""><input type="hidden" name="tags" value="40183056"></div>
+        <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display: none;"></div>
+            <div class="response" id="mce-success-response" style="display: none;"></div>
+        </div><div aria-hidden="true" style="position: absolute; left: -5000px;"><input type="text" name="b_0d89bb5c8066a9533eb98759d_c0a5c3e877" tabindex="-1" value=""></div><div class="clear"><input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe"></div>
+    </div>
+</form>
+</div>
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';fnames[6]='ORG';ftypes[6]='text';fnames[7]='CATEGORY';ftypes[7]='dropdown';fnames[8]='LOCATION';ftypes[8]='dropdown';fnames[9]='MMERGE9';ftypes[9]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
+<!--End mc_embed_signup-->

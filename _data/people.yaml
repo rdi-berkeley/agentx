@@ -1,0 +1,52 @@
+- section_name: "PEOPLE"
+  people:
+    - name: Dan Boneh
+      homepage: https://crypto.stanford.edu/~dabo/
+      image_file: Boneh.jpeg
+    - name: Shafi Goldwasser
+      homepage: https://www2.eecs.berkeley.edu/Faculty/Homepages/goldwasser.html/
+      image_file: goldwasser.jpeg
+      # subtitle: Finance, DeFi
+    - name: Dawn Song
+      homepage: https://people.eecs.berkeley.edu/~dawnsong/
+      image_file: dawn.jpeg
+      # subtitle: "Security & Privacy, Blockchain, ML"
+    - name: Justin Thaler
+      homepage: https://people.cs.georgetown.edu/jthaler/
+      image_file: thaler.png
+    - name: Yupeng Zhang
+      homepage: http://people.tamu.edu/~zhangyp/
+      image_file: yupeng.jpeg
+    - name: Andrew Miller
+      homepage: https://soc1024.ece.illinois.edu/
+      image_file: andrew.jpg
+    - name: Arthur Gervais
+      homepage: https://www.arthurgervais.com/
+      image_file: arthur.jpg
+    - name: Fan Zhang
+      homepage: https://www.fanzhang.me/
+      image_file: fan.jpg
+    - name: Patrick McCorry
+      homepage: https://stonecoldpat.github.io/
+      image_file: patrick.jpeg
+    - name: Amit Sahai
+      homepage: http://web.cs.ucla.edu/~sahai
+      image_file: amit.jpg
+    - name: Pratyush Mishra
+      homepage: https://pratyushmishra.com/
+      image_file: pratyush.png
+    - name: Don Beaver
+      homepage: https://sites.google.com/site/donbeaver/
+      image_file: don.jpg
+    - name: Justin Drake
+      homepage: https://twitter.com/drakefjustin?lang=en
+      image_file: justindrake.jpg
+    - name: Teck Chia
+      homepage: https://twitter.com/hiteck
+      image_file: teck.jpg
+    - name: Aanchal Malhotra
+      homepage: https://twitter.com/aanchalmalhotre?lang=en
+      image_file: aanchal.png
+    - name: Howard Wu
+      homepage: https://twitter.com/1HowardWu?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor
+      image_file: howard.jpg
