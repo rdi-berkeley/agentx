@@ -56,14 +56,56 @@ For AgentX discussion, please join the AgentX channel at the <a href="https://di
 <!-- Partners & Sponsors section (temporary placement)  -->
 <hr style="border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 33, 71, 0), rgba(0, 33, 71, 0.75), rgba(0, 33, 71, 0)); margin-top: 40px; margin-bottom: 40px;">
 <h1 style="text-align: center; font-size: 36px; margin-top: 40px; margin-bottom: 40px; color: #CB9445;">PARTNERS & SPONSORS</h1>
-<div class="prize-container">
+<!-- <div class="prize-container">
   <h3>More to be announced soon</h3>
 </div>
 
 <div class="sponsor-banner-container">
   <img src="{{site.baseurl}}/assets/img/sponsor_banner.png" alt="Banner Image"
   class="sponsor-banner-img">
-</div>
+</div> -->
+<div class="tabs">
+        <div class="tab active" onclick="showTab(0)">Resources</div>
+        <div class="tab" onclick="showTab(1)">Prizes</div>
+        <div class="tab" onclick="showTab(2)">Careers</div>
+    </div>
+    
+    <div class="resource-container active" id="track-0">
+        <div class="resource-card">
+            <img class="logo" src="huggingface.png">
+                <ul class="custom-list">
+                    <li>$100 HF credits per team to the select 100 teams. <em>HF credit can be used towards Hugging Face's paid services, e.g. <a href="https://huggingface.co/inference-endpoints/dedicated">Inference Endpoints</a> and building <a href="https://huggingface.co/spaces">Spaces</a> (ML Apps) with GPUs. Credits can also be used for subscriptions to <a href="https://huggingface.co/pricing#pro">PRO</a> and <a href="https://huggingface.co/enterprise">Enterprise</a></em></li>
+                </ul>
+        </div>
+        <div class="resource-card">
+            <img class="logo" src="lambda.png">
+                <ul class="custom-list">
+                    <li>$100 serverless API credits for <a href="https://lambdalabs.com/inference">Inference</a> to every individual participant</li>
+                    <li>$400 GPU credits per team to the select 50 teams</li>
+                </ul>
+        </div>
+        <div class="resource-card">
+            <img class="logo" src="mistral.png">
+                <ul class="custom-list">
+                    <li>$25 coupons (e.g. API credits) per team to the select 50 teams</li>
+                </ul>
+        </div>
+        <div class="resource-card">
+            <h4>More to be announced!</h4>
+        </div>
+    </div>
+    
+    <div class="resource-container active" id="track-1">
+        <div class="resource-card">
+            <h4>More to be announced!</h4>
+        </div>
+    </div>
+
+    <div class="resource-container active" id="track-2">
+        <div class="resource-card">
+            <h4>More to be announced!</h4>
+        </div>
+    </div>
 
 
 <!-- Prizes section  -->
@@ -331,13 +373,68 @@ For AgentX discussion, please join the AgentX channel at the <a href="https://di
 <head> 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head> 
+
+<style>
+      .tabs { 
+        display: flex; 
+        justify-content: center; 
+        gap: 10px; 
+        margin-bottom: 20px; 
+        flex-wrap: wrap; 
+            }
+      .tab { 
+        padding: 10px 20px; 
+        cursor: pointer; 
+        border: 1px solid #ccc; 
+        border-radius: 20px; 
+        background: #e1e1e1; 
+        color: black; 
+        text-decoration: none; 
+            }
+      .tab.active { background-color: #007bff; color: white}
+      .resource-container { display: none; }
+      .resource-container.active { 
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 20px; 
+            }
+      .resource-card { 
+        text-align: center; 
+        border: 1px solid #ddd; 
+        padding: 20px; 
+        width: 30%; 
+        min-width: 250px; 
+        position: relative; 
+        border-radius: 10px; 
+        box-sizing: border-box; 
+            }
+      .custom-list {
+        list-style-type: disc;
+        padding-left: 20px;
+        margin-top: 4px;
+            }
+      .custom-list li {
+        color: black;
+        font-size: 12px;
+        text-align: left;
+            }
+      .custom-list li::marker {
+        color: blue;
+        font-size: 18px;
+            }
+      .logo {
+        width: auto;  /* Set width */
+        height: 30px; /* Set height */
+            }
+    </style>
     
     <script>
         function showTab(index) {
             document.querySelectorAll(".tab").forEach((tab, i) => {
                 tab.classList.toggle("active", i === index);
             });
-            document.querySelectorAll(".winner-container").forEach((container, i) => {
+            document.querySelectorAll(".resource-container").forEach((container, i) => {
                 container.classList.toggle("active", i === index);
             });
         }
