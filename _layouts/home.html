@@ -76,26 +76,62 @@ For AgentX discussion, please join the AgentX channel at the <a href="https://di
     
     <div class="resource-container active" id="track-0">
         <div class="resource-card">
-            <img class="logo" src="{{site.baseurl}}/assets/img/huggingface.png">
+            <img class="logo" src="google.png">
+            <div class="subtitle">Access the Gemini 2.0 Flash API and credits for your team</div>
                 <ul class="custom-list">
-                    <li>$100 HF credits per team to the select 100 teams. <em>HF credit can be used towards Hugging Face's paid services, e.g. <a href="https://huggingface.co/inference-endpoints/dedicated">Inference Endpoints</a> and building <a href="https://huggingface.co/spaces">Spaces</a> (ML Apps) with GPUs. Credits can also be used for subscriptions to <a href="https://huggingface.co/pricing#pro">PRO</a> and <a href="https://huggingface.co/enterprise">Enterprise</a></em></li>
+                <details style="font-size: 14px; text-align: left">
+                <summary class="custom-summary"; style="text-align: left">Everyone can use the Gemini API and Google AI Studio — Gemini 2.0 Flash, free of charge & no credit card needed, and rate limits are high</summary>
+                    <ul>
+                        <li>The pricing / rate limits page (with the free tier info) can be found <a href="https://ai.google.dev/gemini-api/docs/pricing#gemini-2.0-flash">here.</a></li>
+                    </ul>
+                </details>
+                <details style="font-size: 14px; text-align: left">
+                <summary class="custom-summary"; style="text-align: left">Instructions to start developing with the Gemini API, with no credit card required</summary>
+                    <ul>
+                        <li>Go to <a href="https://aistudio.google.com/">Google AI Studio</a></li>
+                        <li>Login with your Google account.</li>
+                        <li>Create an API key.</li>
+                        <li>Read the <a href="https://ai.google.dev/gemini-api/docs/quickstart?lang=rest">Gemini API docs</a></li>
+                    </ul>
+                </details>
+                <details style="font-size: 14px; text-align: left">
+                <summary class="custom-summary"; style="text-align: left">Key info:</summary>
+                    <ul>
+                        <li>15 RPM (requests per minute)</li>
+                        <li>1 million TPM (tokens per minute)</li>
+                        <li>1,500 RPD (requests per day)</li>
+                    </ul>
                 </ul>
+            </details>
+            <details style="font-size: 14px; text-align: left">
+                <summary class="custom-summary"; style="text-align: left; color: blue">Docs</summary>
+                <ul class="custom-list">
+                    <li><a href="https://ai.google.dev/gemini-api/docs">Gemini API Docs</a></li>
+                    <li>Participants can also get started with the <a href="https://github.com/google-gemini/cookbook">Gemini API Cookbook</a>, if teams would like to dive right into code. There you will find many notebooks with complete code demonstrating how to use the Gemini API.</li>
+                </ul>
+            </details>
         </div>
         <div class="resource-card">
-            <img class="logo" src="{{site.baseurl}}/assets/img/lambda.png">
+            <img class="logo" src="lambda.png">
                 <ul class="custom-list">
                     <li>$100 serverless API credits for <a href="https://lambdalabs.com/inference">Inference</a> to every individual participant</li>
                     <li>$400 GPU credits per team to the select 50 teams</li>
                 </ul>
         </div>
         <div class="resource-card">
-            <img class="logo" src="{{site.baseurl}}/assets/img/mistral.png">
+            <img class="logo" src="huggingface.png">
+                <ul class="custom-list">
+                    <li>$100 HF credits per team to the select 100 teams. <em>HF credit can be used towards Hugging Face's paid services, e.g. <a href="https://huggingface.co/inference-endpoints/dedicated">Inference Endpoints</a> and building <a href="https://huggingface.co/spaces">Spaces</a> (ML Apps) with GPUs. Credits can also be used for subscriptions to <a href="https://huggingface.co/pricing#pro">PRO</a> and <a href="https://huggingface.co/enterprise">Enterprise</a></em></li>
+                </ul>
+        </div>
+        <div class="resource-card">
+            <img class="logo" src="mistral.png">
                 <ul class="custom-list">
                     <li>$25 coupons (e.g. API credits) per team to the select 50 teams</li>
                 </ul>
         </div>
         <div class="resource-card">
-            <h5>More to be announced!</h5>
+            <h4>More to be announced!</h4>
         </div>
     </div>
     
@@ -422,6 +458,19 @@ For AgentX discussion, please join the AgentX channel at the <a href="https://di
       .logo {
         width: auto;  /* Set width */
         height: 30px; /* Set height */
+            }
+      .subtitle {
+        color: blue;
+        margin: 4px 0;
+        text-align: left;
+        font-size: 14px;
+            }
+        .custom-summary {
+          cursor: pointer;
+          font-size: 14px;
+            }
+        .custom-summary::marker {
+          color: blue;
             }
     </style>
     
