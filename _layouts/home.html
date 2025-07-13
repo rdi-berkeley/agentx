@@ -223,12 +223,12 @@ For AgentX discussion, please join the AgentX channel at the <a href="https://di
 <hr style="border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 33, 71, 0), rgba(0, 33, 71, 0.75), rgba(0, 33, 71, 0)); margin-top: 40px; margin-bottom: 40px;">
 <h1 id="winners" style="text-align: center; font-size: 36px; margin-top: 40px; margin-bottom: 20px; color: #CB9445;">AGENTX FINALISTS</h1>
 
-    <div class="tabs">
-        <div class="tab active" onclick="showTab(3)">Entrepreneurship Track (6)</div>
-        <div class="tab" onclick="showTab(4)">Research Track (15)</div>
+    <div class="wtabs">
+        <div class="wtab active" onclick="wShowTab(0)">Entrepreneurship Track (6)</div>
+        <div class="wtab" onclick="wShowTab(1)">Research Track (15)</div>
     </div>
 
-    <div class="winner-container active" id="track-3">
+    <div class="winner-container active" id="track-0">
         <div class="winner-card">
             <!-- <div class="placement">1st Place</div> -->
             <h6 style="margin-top:35px">Team Raycaster</h6>
@@ -309,7 +309,7 @@ For AgentX discussion, please join the AgentX channel at the <a href="https://di
         </div>
     </div>
     
-    <div class="winner-container active" id="track-4">
+    <div class="winner-container active" id="track-1">
         <div class="winner-card">
             <!-- <div class="placement">1st Place</div> -->
             <h6 style="margin-top:35px">Team NovaSky</h6>
@@ -492,6 +492,20 @@ For AgentX discussion, please join the AgentX channel at the <a href="https://di
             </p>
         </div>
     </div>
+
+    <script>
+        function wShowTab(index) {
+            document.querySelectorAll(".wtab").forEach((wtab, i) => {
+                tab.classList.toggle("active", i === index);
+            });
+            document.querySelectorAll(".winner-container").forEach((container, i) => {
+                container.classList.toggle("active", i === index);
+            });
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            wShowTab(0); // Ensure only the first tab is shown on page load
+        });
+    </script>
 
 <!-- Timeline section  -->
 <hr style="border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 33, 71, 0), rgba(0, 33, 71, 0.75), rgba(0, 33, 71, 0)); margin-top: 40px; margin-bottom: 40px;">
@@ -894,6 +908,14 @@ For AgentX discussion, please join the AgentX channel at the <a href="https://di
 </head> 
 
 <style>
+      .wtabs { display: flex; justify-content: center; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+      .wtab { padding: 10px 20px; cursor: pointer; border: 1px solid #ccc; border-radius: 20px; background: #e1e1e1; color: black; text-decoration: none; }
+      .wtab.active { background-color: #007bff; color: white}
+      .winner-container { display: none; }
+      .winner-container.active { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+      .winner-card { text-align: center; border: 1px solid #ddd; padding: 20px; width: 300px; position: relative; border-radius: 10px; box-sizing: border-box; }
+      .placement {  position: absolute; top: 10px; right: 10px; font-size: 11px; padding: 5px 15px; background: gold; border-radius: 15px; text-decoration: none; margin: 5px;  }
+      .links a { display: inline-block; padding: 5px 15px; font-size: 11px; background: #e1e1e1; color: black; border-radius: 15px; text-decoration: none; margin: 5px; }
       .tabs { 
         display: flex; 
         justify-content: center; 
@@ -911,11 +933,6 @@ For AgentX discussion, please join the AgentX channel at the <a href="https://di
         text-decoration: none; 
             }
       .tab.active { background-color: #007bff; color: white}
-      .winner-container { display: none; }
-      .winner-container.active { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
-      .winner-card { text-align: center; border: 1px solid #ddd; padding: 20px; width: 300px; position: relative; border-radius: 10px; box-sizing: border-box; }
-      .placement {  position: absolute; top: 10px; right: 10px; font-size: 11px; padding: 5px 15px; background: gold; border-radius: 15px; text-decoration: none; margin: 5px;  }
-      .links a { display: inline-block; padding: 5px 15px; font-size: 11px; background: #e1e1e1; color: black; border-radius: 15px; text-decoration: none; margin: 5px; }
       .resource-container { display: none; }
       .resource-container.active { 
         display: flex; 
@@ -974,13 +991,8 @@ For AgentX discussion, please join the AgentX channel at the <a href="https://di
             document.querySelectorAll(".resource-container").forEach((container, i) => {
                 container.classList.toggle("active", i === index);
             });
-            document.querySelectorAll(".winner-container").forEach((container, i) => {
-                container.classList.toggle("active", i === index);
-            });
-        }
         document.addEventListener("DOMContentLoaded", function() {
             showTab(0); // Ensure only the first tab is shown on page load
-            showTab(3);
         });
     </script>
 
