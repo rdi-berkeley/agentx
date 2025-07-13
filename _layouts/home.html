@@ -974,9 +974,13 @@ For AgentX discussion, please join the AgentX channel at the <a href="https://di
             document.querySelectorAll(".resource-container").forEach((container, i) => {
                 container.classList.toggle("active", i === index);
             });
+            document.querySelectorAll(".winner-container").forEach((container, i) => {
+                container.classList.toggle("active", i === index);
+            });
         }
         document.addEventListener("DOMContentLoaded", function() {
             showTab(0); // Ensure only the first tab is shown on page load
+            showTab(3);
         });
     </script>
 
